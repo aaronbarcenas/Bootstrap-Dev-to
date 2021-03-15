@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DEV Maquetado</title>
+  <title>DEV Maquetado prueba</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
     integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
   <link rel="stylesheet" href="css/stile.css">
@@ -14,32 +14,69 @@
 
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light border border-top-0 border-right-0 border-left-0 border-gradient-secondary">
     <div>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
-    </button>
-    <a class="navbar-brand" href="#"><img src="images/devto.svg" width="37" height="37" alt=""></a>
+      </button>
+      <a class="navbar-brand" href="#"><img src="images/devto.svg" width="37" height="40" alt=""></a>
+      <form class="form-inline my-2 my-lg-0 d-none d-lg-block">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search..." aria-label="Search"> 
+      </form>
     </div>
+
     <div class="right-wrap">
-      <button class="display-desktop btn-nav">Write a post</button>
-      <img class="display-mobile" src="images/lupa-icon.svg" alt="lupa-icon">
-      <img src="images/message-icon.svg" alt="write-icon">
-      <img src="images/bell-icon.svg" alt="bell-icon">
-      <img class="profile-photo" src="https://res.cloudinary.com/practicaldev/image/fetch/s--jl25ieQ4--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/570253/d305dc25-89e7-4959-bba9-f85ff315a1c7.jpeg" alt="">
+      <button class="btn btn-primary d-none d-lg-block" type="button">Write a post</button>
+      <img class="d-lg-none px-2 navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSearchContent"
+      aria-controls="navbarSearchContent" aria-expanded="false" aria-label="Toggle navigation" src="images/lupa-icon.svg" alt="lupa-icon">
+      <img class="px-2" type="button" data-toggle="collapse" data-target="#navbarWriteContent"
+      aria-controls="navbarWriteContent" aria-expanded="false" aria-label="Toggle navigation" src="images/message-icon.svg" alt="write-icon">
+      <img class="pl-2 pr-3" type="button" data-toggle="collapse" data-target="#navbarBellContent"
+      aria-controls="navbarBellContent" aria-expanded="false" aria-label="Toggle navigation" src="images/bell-icon.svg" alt="bell-icon">
+      <img class="rounded-circle" src="https://res.cloudinary.com/practicaldev/image/fetch/s--jl25ieQ4--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/570253/d305dc25-89e7-4959-bba9-f85ff315a1c7.jpeg" width="30" height="30" alt="">
     </div>
     
+    
+    <!-- Menu-mobile emergente del menu hamburguesa -->
+    <div class="collapse" id="navbarSupportedContent">
+      <div class="border border-top-0 border-right-0 border-left-0 border-secondary p-4">
+        <h5 class="font-weight-bolder">DEV Community</h5>
+        <img src="images/close.svg" alt="">
+      </div>
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active d-flex pt-2">
+          <img class="px-2" src="images/home-icon.svg" alt="Home">
+          <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active d-flex pt-2">
+          <img class="px-2" src="images/reading-icon.svg" alt="Reading">
+          <a class="nav-link" href="#">Reading List</a>
+        </li>
+        <li class="nav-item active d-flex pt-2">
+          <img class="px-2" src="images/listings-icon.svg" alt="Listings">
+          <a class="nav-link" href="#">Listings</a>
+        </li>
+        <li class="nav-item active d-flex pt-2">
+          <img class="px-2" src="images/podcasts-icon.svg" alt="Listings">
+          <a class="nav-link" href="#">Podcasts</a>
+        </li>
+        <li class="nav-item active d-flex pt-2">
+          <img class="px-2" src="images/videos-icon.svg" alt="Listings">
+          <a class="nav-link" href="#">Videos</a>
+        </li>
+        <li class="nav-item active d-flex pt-2">
+          <img class="px-2" src="images/tags-icon.svg" alt="Listings">
+          <a class="nav-link" href="#">Tagss</a>
+        </li>
+        <li class="nav-item d-flex pt-2">
+          <a class="nav-link pl-5" href="#">More...</a>
+        </li>
+      </ul>
+
     
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
+        <!--
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
@@ -60,8 +97,194 @@
         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
       </form>
+      -->
+    </div>
+
+    <!-- Menu-mobile emergente del icono de busqueda -->
+    <div class="collapse bg-gradient-secondary" id="navbarSearchContent">
+
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search..." aria-label="Search"> 
+      </form>
+
+      <h4 class="font-weight-bolder my-3">Search results</h4>
+
+      <ul class="nav">
+        <li class="nav-item border border-top-0 border-right-0 border-left-0 border-primary">
+          <a class="nav-link active text-dark font-weight-bold" href="#">Most Revelant</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="#">Newest</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="#">Oldest</a>
+        </li>
+      </ul>
+
+      <ul class="nav flex-column">
+        <li class="nav-item mt-4 mb-1">
+          <a class="nav-link active text-dark" href="#">Posts</a>
+        </li>
+        <li class="nav-item my-1">
+          <a class="nav-link active text-dark" href="#">Podcasts</a>
+        </li>
+        <li class="nav-item my-1">
+          <a class="nav-link active text-dark" href="#">People</a>
+        </li>
+        <li class="nav-item my-1">
+          <a class="nav-link active text-dark" href="#">Comments</a>
+        </li>
+        <li class="nav-item my-1">
+          <a class="nav-link active text-dark" href="#">My posts only</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Menu-mobile del icono de write -->
+    <div class="collapse vh-100" id="navbarWriteContent">
+      <form class="form-inline d-flex justify-content-between">
+        <div class="form-group mx-sm-5 mb-2">
+          <input type="text" class="form-control" placeholder="Write message to">
+        </div>
+        <button type="submit" class="btn btn-primary mb-2 ml-2">Send</button>
+      </form>
+    </div>
+
+    <!-- Menu-mobile del bell-icon -->
+    <div class="collapse vh-100" id="navbarBellContent">
+      <div class="d-flex justify-content-between border-bottom-secondary p-4">
+        <h5 class="font-weight-bolder">Notifications</h5>
+        <a class="text-muted" href="#">Settings</a>
+      </div>
+      <ul class="nav d-flex justify-content-around">
+        <li class="nav-item border border-top-0 border-right-0 border-left-0 border-primary">
+          <a class="nav-link active text-dark font-weight-bold" href="#">All</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="#">Comments</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="#">Posts</a>
+        </li>
+      </ul>
+    </div>
+
+  </nav>
+
+  <!-- ¿ Como ocultar esta nav cuando uno de los icons sean activados ?-->
+  <nav class="navbar navbar-light d-lg-none alert-secondary">
+    <span class="navbar-brand mb-0 h1">Posts</span>
+    <div class="btn-group" role="group">
+      <button id="btnGroupDrop1" type="button" class="btn btn-outline-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Feed
+      </button>
+      <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+        <a class="dropdown-item" href="#">Feed</a>
+        <a class="dropdown-item" href="#">Week</a>
+        <a class="dropdown-item" href="#">Month</a>
+        <a class="dropdown-item" href="#">Year</a>
+        <a class="dropdown-item" href="#">Infinity</a>
+        <a class="dropdown-item" href="#">Latest</a>
+      </div>
     </div>
   </nav>
+
+
+  <footer class="alert-dark">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 mt-5">
+          <ul class="nav justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link active text-dark" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-dark" href="#">Reading List</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link active text-dark" href="#">Listings</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-dark" href="#">Podcasts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-dark" href="#">Videos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-dark" href="#">Tags</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-dark" href="#">Code of Conduct</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-dark" href="#">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-dark" href="#">DEV Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-dark" href="#">Sponsors</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-dark" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-dark" href="#">Privacy Policy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-dark" href="#">Terms of use</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-dark" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-dark font-weight-bolder" href="#">Write a post</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-dark" href="#"></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-12 d-flex justify-content-center my-3 border border-top-0 border-right-0 border-left-0 border-secondary">
+          <a class="pr-3" href="#">
+            <img src="images/twitter-icon.svg" width="30" height="30" alt="">
+          </a>
+          <a class="px-3" href="#">
+            <img src="images/facebook-icon.svg" width="30" height="30" alt="">
+          </a>
+          <a class="px-3" href="#">
+            <img src="images/github-icon.svg" width="30" height="30" alt="">
+          </a>
+          <a class="px-3" href="#">
+            <img src="images/instagram-icon.svg" width="30" height="30" alt="">
+          </a>
+          <a class="pl-3" href="#">
+            <img src="images/twitch-icon.svg" width="30" height="30" alt="">
+          </a>
+        </div>
+
+        <div class="col-12 d-flex justify-content-center my-3">
+          <div class="col-lg-8 text-center">
+            <p><a class="font-weight-bolder text-dark" href="">DEV Community</a> - A constructive and inclusive social network for software developers. With you every step of your journey.</p>
+          </div>
+        </div>
+
+        <div class="col-12 d-flex justify-content-center my-3">
+          <div class="col-lg-7 text-center">
+            <p class="font-weight-light">Built on <a class="font-weight-bolder text-dark" href="">Forem</a> -- the <a class="font-weight-bolder text-dark" href="">open source</a> software that powers <a class="font-weight-bolder text-dark" href="">DEV</a> and other inclusive communities.</p>
+            <p>Made with love and <a class="font-weight-bolder text-dark" href="">Ruby on Rails</a>. DEV Community @copy 2016 - 2021.</p>
+            <a href="#"><img src="images/forem-logo.svg" width="30" height="30" alt=""></a>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+  </footer>
+
+  
 
 
 
