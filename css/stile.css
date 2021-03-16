@@ -6,6 +6,10 @@
   margin: 0;
 }
 
+body {
+  background-color: #EEF0F1;
+}
+
 .sticky {
   position: fixed;
   top: 0;
@@ -18,5 +22,66 @@
 
 #headerbar {
   overflow: hidden;
+}
+
+.text-blue {
+  color: #3b49df;
+}
+
+.color-blue {
+  background-color: #3b49df;
+  font-size: 18px;
+  border: 1px solid #3b49df;
+}
+
+.color-light-grey {
+  background-color: #E2E4E6;
+  font-size: 18px;
+  border: 1px solid #E2E4E6;
+  color: #333;
+}
+
+.btn-new {
+  background-color: #3b49df;
+  font-size: 12px;
+  border: 1px solid #3b49df;
+  border-radius: 6px;
+  width: 45px;
+}
+
+.title-hx:hover {
+  color: #3b49df !important;
+  text-decoration: none !important;
+}
+
+.btn-hover:hover {
+  cursor: pointer !important;
+  color: #333 !important;
+}
+
+.li-hov:hover {
+  cursor: pointer;
+  background-color: #E2E4E6;
+  border-radius: 5px;
+}
+
+.icon-invert:hover {
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+}
+
+.icon-move {
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  position: absolute;
+}
+
+.icon-move:hover {
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+}
+
+.border-gray {
+  border-bottom: 1px solid #999;
 }
 /*# sourceMappingURL=stile.css.map */

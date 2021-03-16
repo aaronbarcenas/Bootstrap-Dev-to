@@ -9,6 +9,10 @@ $primary-blue:#3b49df;
   margin:0;
 }
 
+body {
+  background-color: $very-light-grey;
+}
+
 
 .sticky {
   position: fixed;
@@ -24,4 +28,63 @@ $primary-blue:#3b49df;
   overflow: hidden;
 }
 
+.text-blue {
+  color: $primary-blue;
+}
+
+.color-blue {
+  background-color:$primary-blue;
+  font-size: 18px;
+  border: 1px solid $primary-blue;
+}
+
+
+.color-light-grey {
+  background-color:$light-grey;
+  font-size: 18px;
+  border: 1px solid $light-grey;
+  color: #333;
+}
+
+.btn-new {
+  background-color:$primary-blue;
+  font-size: 12px;
+  border: 1px solid $primary-blue;
+  border-radius: 6px;
+  width: 45px;
+}
+
+.title-hx:hover {
+  color: $primary-blue !important;
+  text-decoration: none !important;
+}
+
+.btn-hover:hover {
+  cursor: pointer !important;
+  color: #333 !important;
+}
+
+.li-hov:hover {
+  cursor: pointer;
+  background-color: $light-grey;
+  border-radius: 5px;
+}
+
+.icon-invert:hover {
+  filter: invert(100%);
+}
+
+.icon-move {
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  position: absolute;
+
+  &:hover {
+    transform: rotate(10deg);
+  }
+}
+
+.border-gray {
+  border-bottom: 1px solid #999 ;
+}
 

@@ -14,30 +14,36 @@
 
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light border border-top-0 border-right-0 border-left-0 border-gradient-secondary">
-    <div>
+  <nav
+    class="container navbar navbar-expand-lg navbar-light bg-light border border-top-0 border-right-0 border-left-0 border-gradient-secondary justify-content-between px-0">
+    <div class="d-flex align-items-center col-6 pl-0">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
       </button>
       <a class="navbar-brand" href="#"><img src="images/devto.svg" width="37" height="40" alt=""></a>
       <form class="form-inline my-2 my-lg-0 d-none d-lg-block">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search..." aria-label="Search"> 
+        <input class="form-control mr-sm-2" type="search" placeholder="Search..." aria-label="Search">
       </form>
     </div>
 
-    <div class="right-wrap">
-      <button class="btn btn-primary d-none d-lg-block" type="button">Write a post</button>
+    <div class="right-wrap d-flex align-items-center col-6 justify-content-end pr-0">
+      <button class="btn btn-primary d-none d-lg-block color-blue" type="button">Write a post</button>
       <img class="d-lg-none px-2 navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSearchContent"
-      aria-controls="navbarSearchContent" aria-expanded="false" aria-label="Toggle navigation" src="images/lupa-icon.svg" alt="lupa-icon">
+        aria-controls="navbarSearchContent" aria-expanded="false" aria-label="Toggle navigation"
+        src="images/lupa-icon.svg" alt="lupa-icon">
       <img class="px-2" type="button" data-toggle="collapse" data-target="#navbarWriteContent"
-      aria-controls="navbarWriteContent" aria-expanded="false" aria-label="Toggle navigation" src="images/message-icon.svg" alt="write-icon">
+        aria-controls="navbarWriteContent" aria-expanded="false" aria-label="Toggle navigation"
+        src="images/message-icon.svg" alt="write-icon">
       <img class="pl-2 pr-3" type="button" data-toggle="collapse" data-target="#navbarBellContent"
-      aria-controls="navbarBellContent" aria-expanded="false" aria-label="Toggle navigation" src="images/bell-icon.svg" alt="bell-icon">
-      <img class="rounded-circle" src="https://res.cloudinary.com/practicaldev/image/fetch/s--jl25ieQ4--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/570253/d305dc25-89e7-4959-bba9-f85ff315a1c7.jpeg" width="30" height="30" alt="">
+        aria-controls="navbarBellContent" aria-expanded="false" aria-label="Toggle navigation"
+        src="images/bell-icon.svg" alt="bell-icon">
+      <img class="rounded-circle"
+        src="https://res.cloudinary.com/practicaldev/image/fetch/s--jl25ieQ4--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/570253/d305dc25-89e7-4959-bba9-f85ff315a1c7.jpeg"
+        width="30" height="30" alt="">
     </div>
-    
-    
+
+
     <!-- Menu-mobile emergente del menu hamburguesa -->
     <div class="collapse" id="navbarSupportedContent">
       <div class="border border-top-0 border-right-0 border-left-0 border-secondary p-4">
@@ -58,15 +64,15 @@
           <a class="nav-link" href="#">Listings</a>
         </li>
         <li class="nav-item active d-flex pt-2">
-          <img class="px-2" src="images/podcasts-icon.svg" alt="Listings">
+          <img class="px-2" src="images/podcasts-icon.svg" alt="Podcasts">
           <a class="nav-link" href="#">Podcasts</a>
         </li>
         <li class="nav-item active d-flex pt-2">
-          <img class="px-2" src="images/videos-icon.svg" alt="Listings">
+          <img class="px-2" src="images/videos-icon.svg" alt="videos">
           <a class="nav-link" href="#">Videos</a>
         </li>
         <li class="nav-item active d-flex pt-2">
-          <img class="px-2" src="images/tags-icon.svg" alt="Listings">
+          <img class="px-2" src="images/tags-icon.svg" alt="tags">
           <a class="nav-link" href="#">Tagss</a>
         </li>
         <li class="nav-item d-flex pt-2">
@@ -74,9 +80,9 @@
         </li>
       </ul>
 
-    
 
-        <!--
+
+      <!--
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
@@ -104,7 +110,7 @@
     <div class="collapse bg-gradient-secondary" id="navbarSearchContent">
 
       <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search..." aria-label="Search"> 
+        <input class="form-control mr-sm-2" type="search" placeholder="Search..." aria-label="Search">
       </form>
 
       <h4 class="font-weight-bolder my-3">Search results</h4>
@@ -175,7 +181,8 @@
   <nav class="navbar navbar-light d-lg-none alert-secondary">
     <span class="navbar-brand mb-0 h1">Posts</span>
     <div class="btn-group" role="group">
-      <button id="btnGroupDrop1" type="button" class="btn btn-outline-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <button id="btnGroupDrop1" type="button" class="btn btn-outline-secondary dropdown-toggle" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
         Feed
       </button>
       <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
@@ -189,11 +196,635 @@
     </div>
   </nav>
 
+  <main class="container">
+    <div class="row">
+
+
+      <nav class="col-md-4 col-xl-2 d-none d-md-block px-0">
+
+        <div>
+          <ul class="navbar-nav mr-auto text-dark">
+            <li class="nav-item active d-flex pt-2 li-hov">
+              <img class="px-2" src="images/home-icon.svg" alt="Home">
+              <a class="nav-link text-dark" href="#">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active d-flex pt-2 li-hov">
+              <img class="px-2" src="images/reading-icon.svg" alt="Reading">
+              <a class="nav-link text-dark" href="#">Reading List</a>
+            </li>
+            <li class="nav-item active d-flex pt-2 li-hov">
+              <img class="px-2" src="images/listings-icon.svg" alt="Listings">
+              <a class="nav-link text-dark" href="#">Listings</a>
+            </li>
+            <li class="nav-item active d-flex pt-2 li-hov">
+              <img class="px-2" src="images/podcasts-icon.svg" alt="Listings">
+              <a class="nav-link text-dark" href="#">Podcasts</a>
+            </li>
+            <li class="nav-item active d-flex pt-2 li-hov">
+              <img class="px-2" src="images/videos-icon.svg" alt="Listings">
+              <a class="nav-link text-dark" href="#">Videos</a>
+            </li>
+            <li class="nav-item active d-flex pt-2 li-hov">
+              <img class="px-2" src="images/tags-icon.svg" alt="Listings">
+              <a class="nav-link text-dark" href="#">Tagss</a>
+            </li>
+            <li class="nav-item d-flex pt-2 li-hovs">
+              <a class="nav-link pl-5 text-dark" href="#">More...</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <div class="d-flex justify-content-between mt-4">
+            <h5 class="font-weight-bolder">My Tags</h5>
+            <img class="icon-invert" src="images/cog-icon.svg" alt="">
+          </div>
+          <ul class="navbar-nav mr-auto text-dark">
+            <li class="nav-item active d-flex pt-2 li-hov">
+              <a class="nav-link text-dark px-2" href="#">&#35git&github</a>
+            </li>
+            <li class="nav-item active d-flex pt-2 li-hov">
+              <a class="nav-link text-dark px-2" href="#">&#35html5</a>
+            </li>
+            <li class="nav-item active d-flex pt-2 li-hov">
+              <a class="nav-link text-dark px-2" href="#">&#35css3</a>
+            </li>
+            <li class="nav-item active d-flex pt-2 li-hov">
+              <a class="nav-link text-dark px-2" href="#">&#35sass</a>
+            </li>
+            <li class="nav-item active d-flex pt-2 li-hov">
+              <a class="nav-link text-dark px-2" href="#">&#35bootstrap4</a>
+            </li>
+            <li class="nav-item active d-flex pt-2 li-hov">
+              <a class="nav-link text-dark px-2" href="#">&#35javascript</a>
+            </li>
+            <li class="nav-item active d-flex pt-2 li-hov">
+              <a class="nav-link text-dark px-2" href="#">&#35jquery</a>
+            </li>
+            <li class="nav-item active d-flex pt-2 li-hov">
+              <a class="nav-link text-dark px-2" href="#">&#35ajax</a>
+            </li>
+            <li class="nav-item active d-flex pt-2 li-hov">
+              <a class="nav-link text-dark px-2" href="#">&#35dom</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="card mt-5">
+          <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--oC7-ksvD--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_350/https://thepracticaldev.s3.amazonaws.com/i/5nt0fd0h4cbnlve8b9rf.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">A Book for Juniors Dev🤯</h5>
+          </div>
+        </div>
+
+      </nav>
+
+      <container class="col-7">
+
+        <nav class="navbar navbar-light d-none d-lg-block alert-secondary">
+          <span class="navbar-brand mb-0 h1">Posts</span>
+          <div>
+            <ul class="nav justify-content-end d-flex align-items-center">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Feed</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Week</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Month</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Year</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Infinity</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Latest</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+
+
+        <div class="card mb-3">
+          <img
+            src="https://res.cloudinary.com/practicaldev/image/fetch/s--6rFGdRJR--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/9gc18fb42jzilijelslx.png"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <div class="container">
+              <div class="row">
+                <div class="mb-2">
+                  <img class="rounded-circle"
+                    src="https://res.cloudinary.com/practicaldev/image/fetch/s--lHFtIxk6--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/497983/240ddebc-8fe5-4cb0-af4c-345b0dac7374.jpg" " alt="
+                    ..." width="40" height="40">
+                </div>
+                <div class="ml-2">
+                  <h6 class="mb-0">Joy Shaheb</h6>
+                  <p class="card-text"><small class="text-muted">Mar 4 (9 days ago)</small></p>
+                </div>
+              </div>
+            </div>
+            <a href="#">
+              <h2 class="card-title text-dark font-weight-bolder ml-4 mb-1 title-hx">CSS Grid Cheat Sheet Ilustrated in 2021 🎖️
+              </h2>
+              <nav class="nav ml-3">
+                <a class="nav-link text-dark" href="#">&#35tutorial</a>
+                <a class="nav-link text-dark" href="#">&#35beginners</a>
+                <a class="nav-link text-dark" href="#">&#35webdev</a>
+                <a class="nav-link text-dark" href="#">&#35css</a>
+              </nav>
+            </a>
+            <div class="row d-flex justify-content-between">
+              <div class="col-8">
+                <nav class="nav ml-3">
+                  <a class="nav-link d-flex flex-row align-items-center" href="#">
+                    <img src="images/heart-icon.svg" alt="" width="30" height="30">
+                    <p class="nav-link card-text pl-0"><small class="text-muted">18 reactions</small></p>
+                  </a>
+                  <a class="nav-link d-flex flex-row align-items-center" href="#">
+                    <img src="images/comment-icon.svg" alt="" width="30" height="30">
+                    <p class="nav-link card-text pl-0"><small class="text-muted">16 comments</small></p>
+                  </a>
+                </nav>
+              </div>
+              <div class="col-4 d-flex justify-content-end align-items-center">
+                <p class="nav-link card-text mb-0"><small class="text-muted">6 min read</small></p>
+                <a href="#" class="btn btn-secondary btn-sm disabled btn-hover" tabindex="-1" role="button"
+                  aria-disabled="true">Save</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card mb-3">
+          <div class="card-body">
+            <div class="container">
+              <div class="row">
+                <div class="mb-2">
+                  <img class="rounded-circle" src="https://res.cloudinary.com/practicaldev/image/fetch/s--gO1gtd2j--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/131563/0e6ac862-e699-4dcc-b34a-542628af779e.jpg
+                  " alt="
+                    ..." width="40" height="40">
+                </div>
+                <div class="ml-2">
+                  <h6 class="mb-0">Nathaniel</h6>
+                  <p class="card-text"><small class="text-muted">Mar 14 (1 day ago)</small></p>
+                </div>
+              </div>
+            </div>
+            <a href="#">
+              <h4 class="card-title text-dark font-weight-bolder ml-4 mb-1 title-hx">
+                An HTML and CSS only dark/mode toggle button.
+              </h4>
+              <nav class="nav ml-3">
+                <a class="nav-link text-dark" href="#">&#35html</a>
+                <a class="nav-link text-dark" href="#">&#35css</a>
+                <a class="nav-link text-dark" href="#">&#35a11y</a>
+                <a class="nav-link text-dark" href="#">&#35javascript</a>
+              </nav>
+            </a>
+            <div class="row d-flex justify-content-between">
+              <div class="col-8">
+                <nav class="nav ml-3">
+                  <a class="nav-link d-flex flex-row align-items-center" href="#">
+                    <img src="images/heart-icon.svg" alt="" width="30" height="30">
+                    <p class="nav-link card-text pl-0"><small class="text-muted">74 reactions</small></p>
+                  </a>
+                  <a class="nav-link d-flex flex-row align-items-center" href="#">
+                    <img src="images/comment-icon.svg" alt="" width="30" height="30">
+                    <p class="nav-link card-text pl-0"><small class="text-muted">10 comments</small></p>
+                  </a>
+                </nav>
+              </div>
+              <div class="col-4 d-flex justify-content-end align-items-center">
+                <p class="nav-link card-text mb-0"><small class="text-muted">4 min read</small></p>
+                <a href="#" class="btn btn-secondary btn-sm disabled" tabindex="-1" role="button"
+                  aria-disabled="true">Save</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="card mb-3">
+          <div class="card-body">
+            <div class="container">
+              <div class="row">
+                <div class="mb-2">
+                  <img class="rounded-circle"
+                    src="https://res.cloudinary.com/practicaldev/image/fetch/s--Jax32E4s--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/487583/8d65f310-eefa-42ff-809c-772a6f66753c.jpeg"
+                    alt="..." width="40" height="40">
+                </div>
+                <div class="ml-2">
+                  <h6 class="mb-0">Leonardo Schmitt</h6>
+                  <p class="card-text"><small class="text-muted">Mar 13 (2 days ago)</small></p>
+                </div>
+              </div>
+            </div>
+            <a href="#">
+              <h4 class="card-title text-dark font-weight-bolder ml-4 mb-1 title-hx">
+                How to make a mouse ripple click effect with CSS, JS and HTML in 2 steps 🖱️⚪
+              </h4>
+              <nav class="nav ml-3">
+                <a class="nav-link text-dark" href="#">&#35css</a>
+                <a class="nav-link text-dark" href="#">&#35html</a>
+                <a class="nav-link text-dark" href="#">&#35javascript</a>
+                <a class="nav-link text-dark" href="#">&#35webdev</a>
+              </nav>
+            </a>
+            <div class="row d-flex justify-content-between">
+              <div class="col-8">
+                <nav class="nav ml-3">
+                  <a class="nav-link d-flex flex-row align-items-center" href="#">
+                    <img src="images/heart-icon.svg" alt="" width="30" height="30">
+                    <p class="nav-link card-text pl-0"><small class="text-muted">184 reactions</small></p>
+                  </a>
+                  <a class="nav-link d-flex flex-row align-items-center" href="#">
+                    <img src="images/comment-icon.svg" alt="" width="30" height="30">
+                    <p class="nav-link card-text pl-0"><small class="text-muted">13 comments</small></p>
+                  </a>
+                </nav>
+              </div>
+              <div class="col-4 d-flex justify-content-end align-items-center">
+                <p class="nav-link card-text mb-0"><small class="text-muted">2 min read</small></p>
+                <a href="#" class="btn btn-secondary btn-sm disabled" tabindex="-1" role="button"
+                  aria-disabled="true">Save</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card mb-3">
+          <div class="card-body">
+            <div class="container">
+              <div class="row">
+                <div class="mb-2">
+                  <img class="rounded-circle"
+                    src="https://res.cloudinary.com/practicaldev/image/fetch/s--ZyMRzUJw--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/172822/ad9293b9-7c32-46a2-872e-49e11f61169c.jpg"
+                    alt="..." width="40" height="40">
+                </div>
+                <div class="ml-2">
+                  <h6 class="mb-0">Iain Freestone</h6>
+                  <p class="card-text"><small class="text-muted">Mar 12 (3 days ago)</small></p>
+                </div>
+              </div>
+            </div>
+            <a href="#">
+              <h4 class="card-title text-dark font-weight-bolder ml-4 mb-1 title-hx">
+                🚀10 Trending projects on GitHub for web developers - 12th March 2021
+              </h4>
+              <nav class="nav ml-3">
+                <a class="nav-link text-dark" href="#">&#35javascript</a>
+                <a class="nav-link text-dark" href="#">&#35react</a>
+                <a class="nav-link text-dark" href="#">&#35css</a>
+                <a class="nav-link text-dark" href="#">&#35webdev</a>
+              </nav>
+            </a>
+            <div class="row d-flex justify-content-between">
+              <div class="col-8">
+                <nav class="nav ml-3">
+                  <a class="nav-link d-flex flex-row align-items-center" href="#">
+                    <img src="images/heart-icon.svg" alt="" width="30" height="30">
+                    <p class="nav-link card-text pl-0"><small class="text-muted">469 reactions</small></p>
+                  </a>
+                  <a class="nav-link d-flex flex-row align-items-center" href="#">
+                    <img src="images/comment-icon.svg" alt="" width="30" height="30">
+                    <p class="nav-link card-text pl-0"><small class="text-muted">11 comments</small></p>
+                  </a>
+                </nav>
+              </div>
+              <div class="col-4 d-flex justify-content-end align-items-center">
+                <p class="nav-link card-text mb-0 pl-0"><small class="text-muted">2 min read</small></p>
+                <a href="#" class="btn btn-secondary btn-sm disabled" tabindex="-1" role="button"
+                  aria-disabled="true">Save</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card mb-3">
+          <div class="card-body">
+            <div class="container">
+              <div class="row">
+                <div class="mb-2">
+                  <img class="rounded-circle"
+                    src="https://res.cloudinary.com/practicaldev/image/fetch/s--L612qoc8--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/596307/f27609b2-912f-47c6-8e34-4b8b6489ef31.jpeg"
+                    alt="..." width="40" height="40">
+                </div>
+                <div class="ml-2">
+                  <h6 class="mb-0">Iain Freestone</h6>
+                  <p class="card-text"><small class="text-muted">Mar 15 (1 day ago)</small></p>
+                </div>
+              </div>
+            </div>
+            <a href="#">
+              <h4 class="card-title text-dark font-weight-bolder ml-4 mb-1 title-hx">
+                Best Tools For Web Development
+              </h4>
+              <nav class="nav ml-3">
+                <a class="nav-link text-dark" href="#">&#35webdev</a>
+                <a class="nav-link text-dark" href="#">&#35html</a>
+                <a class="nav-link text-dark" href="#">&#35css</a>
+                <a class="nav-link text-dark" href="#">&#35javascript</a>
+              </nav>
+            </a>
+            <div class="row d-flex justify-content-between">
+              <div class="col-8">
+                <nav class="nav ml-3">
+                  <a class="nav-link d-flex flex-row align-items-center" href="#">
+                    <img src="images/heart-icon.svg" alt="" width="30" height="30">
+                    <p class="nav-link card-text pl-0"><small class="text-muted">353 reactions</small></p>
+                  </a>
+                  <a class="nav-link d-flex flex-row align-items-center" href="#">
+                    <img src="images/comment-icon.svg" alt="" width="30" height="30">
+                    <p class="nav-link card-text pl-0"><small class="text-muted">27 comments</small></p>
+                  </a>
+                </nav>
+              </div>
+              <div class="col-4 d-flex justify-content-end align-items-center">
+                <p class="nav-link card-text mb-0"><small class="text-muted">2 min read</small></p>
+                <a href="#" class="btn btn-secondary btn-sm disabled" tabindex="-1" role="button"
+                  aria-disabled="true">Save</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card mb-3">
+          <div class="card-body">
+            <div class="container">
+              <div class="row">
+                <div class="mb-2">
+                  <img class="rounded-circle"
+                    src="https://res.cloudinary.com/practicaldev/image/fetch/s--bzrfhCEs--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/530414/941751d8-06b8-41bd-9de9-6ea056b7199f.png"
+                    alt="..." width="40" height="40">
+                </div>
+                <div class="ml-2">
+                  <h6 class="mb-0">Tapajyoti Bose</h6>
+                  <p class="card-text"><small class="text-muted">Mar 14 (1 day ago)</small></p>
+                </div>
+              </div>
+            </div>
+            <a href="#">
+              <h4 class="card-title text-dark font-weight-bolder ml-4 mb-1 title-hx">
+                Create Dynamic Spinners only using CSS
+              </h4>
+              <nav class="nav ml-3">
+                <a class="nav-link text-dark" href="#">&#35css</a>
+                <a class="nav-link text-dark" href="#">&#35html</a>
+                <a class="nav-link text-dark" href="#">&#35webdev</a>
+                <a class="nav-link text-dark" href="#">&#35ux</a>
+              </nav>
+            </a>
+            <div class="row d-flex justify-content-between">
+              <div class="col-8">
+                <nav class="nav ml-3">
+                  <a class="nav-link d-flex flex-row align-items-center" href="#">
+                    <img src="images/heart-icon.svg" alt="" width="30" height="30">
+                    <p class="nav-link card-text pl-0"><small class="text-muted">126 reactions</small></p>
+                  </a>
+                  <a class="nav-link d-flex flex-row align-items-center" href="#">
+                    <img src="images/comment-icon.svg" alt="" width="30" height="30">
+                    <p class="nav-link card-text pl-0"><small class="text-muted">7 comments</small></p>
+                  </a>
+                </nav>
+              </div>
+              <div class="col-4 d-flex justify-content-end align-items-center">
+                <p class="nav-link card-text mb-0"><small class="text-muted">2 min read</small></p>
+                <a href="#" class="btn btn-secondary btn-sm disabled" tabindex="-1" role="button"
+                  aria-disabled="true">Save</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card mb-3">
+          <div class="card-body">
+            <div class="container">
+              <div class="row">
+                <div class="mb-2">
+                  <img class="rounded-circle"
+                    src="https://res.cloudinary.com/practicaldev/image/fetch/s--mw2smabj--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/520716/dc6051bc-9129-4879-a833-f743051af755.jpeg"
+                    alt="..." width="40" height="40">
+                </div>
+                <div class="ml-2">
+                  <h6 class="mb-0">Tulio Calil</h6>
+                  <p class="card-text"><small class="text-muted">Mar 13 (2 days ago)</small></p>
+                </div>
+              </div>
+            </div>
+            <a href="#">
+              <h4 class="card-title text-dark font-weight-bolder ml-4 mb-1 title-hx">
+                5 Awesome React Hooks ⚛️
+              </h4>
+              <nav class="nav ml-3">
+                <a class="nav-link text-dark" href="#">&#35react</a>
+                <a class="nav-link text-dark" href="#">&#35reactnative</a>
+                <a class="nav-link text-dark" href="#">&#35javascript</a>
+                <a class="nav-link text-dark" href="#">&#35nextjs</a>
+              </nav>
+            </a>
+            <div class="row d-flex justify-content-between">
+              <div class="col-8">
+                <nav class="nav ml-3">
+                  <a class="nav-link d-flex flex-row align-items-center" href="#">
+                    <img src="images/heart-icon.svg" alt="" width="30" height="30">
+                    <p class="nav-link card-text pl-0"><small class="text-muted">173 <span
+                          class="d-none d-lg-block">reactions</span></small></p>
+                  </a>
+                  <a class="nav-link d-flex flex-row align-items-center" href="#">
+                    <img src="images/comment-icon.svg" alt="" width="30" height="30">
+                    <p class="nav-link card-text d-fex flex-row pl-0"><small class="text-muted">4<span
+                          class="d-none d-lg-block">comments</span></small></p>
+                  </a>
+                </nav>
+              </div>
+              <div class="col-4 d-flex justify-content-end align-items-center">
+                <p class="nav-link card-text mb-0"><small class="text-muted">2 min read</small></p>
+                <a href="#" class="btn btn-secondary btn-sm disabled" tabindex="-1" role="button"
+                  aria-disabled="true">Save</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+      </container>
+
+      <aside class="col-3 px-0 d-none d-xl-block">
+
+        <div class="card">
+          <img src="https://dev-to-uploads.s3.amazonaws.com/i/vuoa6jsh5uhy32ehpizb.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h3 class="card-title font-weight-bolder">Stories (122)</h3>
+            <p class="card-text">SheCoded 2021 -- Stories From Women Building Software and the Allies Supporting Them
+            </p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Nevertheless, she coded: Celine Surai</li>
+            <li class="list-group-item">Nevertheless, she coded: Shufaa Yakut</li>
+            <li class="list-group-item">Nevertheless, she coded: Carol Kariuki</li>
+            <li class="list-group-item">Nevertheless, she coded: Sharon Telewa</li>
+          </ul>
+          <div class="card-body">
+            <a href="#" class="card-link"><button type="button" class="btn btn-primary btn-lg btn-block color-blue py-1">Share Your
+                Story</button></a>
+            <a href="#" class="card-link"><button type="button" class="btn btn-secondary btn-lg btn-block color-light-grey py-1">See all
+                posts</button></a>
+          </div>
+        </div>
+
+        <div class="card my-3">
+          <div class="card-body d-flex justify-content-between align-items-center">
+            <h4 class="card-title font-weight-bold mb-0">Listings</h4>
+            <a href="#">See all</a>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">JavaScript Whizzkid needed
+              <p class="nav-link card-text mb-0 p-0"><small class="text-muted">jobs</small></p>
+            </li>
+            <li class="list-group-item">Looking for remote work as an iOS, backend (NodeJS) or fullstack (iOS + ReactJS
+              + NodeJS) dev
+              <p class="nav-link card-text mb-0 p-0"><small class="text-muted">products</small></p>
+            </li>
+            <li class="list-group-item">Building Your Mouseless Development Environment
+              <p class="nav-link card-text mb-0 p-0"><small class="text-muted">forhire</small></p>
+            </li>
+            <li class="list-group-item">I'll write great and engaging content for your blog
+              <p class="nav-link card-text mb-0 p-0"><small class="text-muted">forhire</small></p>
+            </li>
+            <li class="list-group-item">Render(ATL) React Javascrip Conference
+              <p class="nav-link card-text mb-0 p-0"><small class="text-muted">events</small></p>
+            </li>
+            <li class="list-group-item text-center">
+              <a href="#">Create a Listing</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="card my-3">
+          <div class="card-body d-flex justify-content-between align-items-center">
+            <h4 class="card-title font-weight-bold mb-0">&#35news</h4>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">NEW USER
+              <p class="nav-link card-text mb-0 p-0"><small class="text-muted">1 comment</small></p>
+            </li>
+
+            <li class="list-group-item">Sky Hub New Server On Discord
+              <a class="btn btn-primary btn-sm nav-link card-text mb-0 mt-2 p-0 btn-new" href="#" role="button">New</a>
+            </li>
+            <li class="list-group-item">Sky Hub Discord Server Now Live
+              <a class="btn btn-primary btn-sm nav-link card-text mb-0 mt-2 p-0 btn-new" href="#" role="button">New</a>
+            </li>
+            <li class="list-group-item">Titanium News &#35 1
+              <p class="nav-link card-text mb-0 p-0"><small class="text-muted">2 comments</small></p>
+            </li>
+            <li class="list-group-item">OVH Strasbourg: Halt and Catch FIre, Data Uploaded to the Cloud
+              <a class="btn btn-primary btn-sm nav-link card-text mb-0 mt-2 p-0 btn-new" href="#" role="button">New</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="card my-3">
+          <div class="card-body d-flex justify-content-between align-items-center">
+            <h4 class="card-title font-weight-bold mb-0">&#35help</h4>
+          </div>
+          <ul class="list-group list-group-flush">
+
+            <li class="list-group-item">How secure do I need to connect a website to a database?
+              <p class="nav-link card-text mb-0 p-0"><small class="text-muted">1 comment</small></p>
+            </li>
+            <li class="list-group-item">WYSIWYG editor for react js
+              <a class="btn btn-primary btn-sm nav-link card-text mb-0 mt-2 p-0 btn-new" href="#" role="button">New</a>
+            </li>
+            <li class="list-group-item">Where can I host PostgreSQL with custom extensions for cheap (or free)
+              <p class="nav-link card-text mb-0 p-0"><small class="text-muted">1 comment</small></p>
+            </li>
+            <li class="list-group-item">Can you suggest some simple UI assignment that can be given to fresher
+              recruitment?
+              <p class="nav-link card-text mb-0 p-0"><small class="text-muted">3 comments</small></p>
+            </li>
+            <li class="list-group-item">Best Strategy for choosing technology
+              <p class="nav-link card-text mb-0 p-0"><small class="text-muted">1 comment</small></p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="card my-3">
+          <div class="card-body d-flex justify-content-between align-items-center">
+            <h4 class="card-title font-weight-bold mb-0">&#35discuss</h4>
+          </div>
+          <ul class="list-group list-group-flush">
+
+            <li class="list-group-item">What was your win this week?
+              <p class="nav-link card-text mb-0 p-0"><small class="text-muted">30 comments</small></p>
+            </li>
+            <li class="list-group-item">The full Stack Ilusion
+              <p class="nav-link card-text mb-0 p-0"><small class="text-muted">24 comments</small></p>
+            </li>
+            <li class="list-group-item">What are you favourite Datascience and Machine Learning blogs?
+              <p class="nav-link card-text mb-0 p-0"><small class="text-muted">1 comment</small></p>
+            </li>
+            <li class="list-group-item">Do you ever block Javascript?! Why!?
+              <a class="btn btn-primary btn-sm nav-link card-text mb-0 mt-2 p-0 btn-new" href="#" role="button">New</a>
+            </li>
+            <li class="list-group-item">Frustraciones a la orden del dia
+              <p class="nav-link card-text mb-0 p-0"><small class="text-muted">2 comments</small></p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="card my-3">
+          <div class="card-body d-flex justify-content-between align-items-center">
+            <h4 class="card-title font-weight-bold mb-0">&#35explainlikeimfive</h4>
+          </div>
+        </div>
+
+        <div class="card my-3">
+          <div class="card-body d-flex justify-content-between align-items-center">
+            <h4 class="card-title font-weight-bold mb-0">&#35challenge</h4>
+          </div>
+          <ul class="list-group list-group-flush">
+
+            <li class="list-group-item">HackerRank Big Sorting challenge
+              <a class="btn btn-primary btn-sm nav-link card-text mb-0 mt-2 p-0 btn-new" href="#" role="button">New</a>
+            </li>
+            <li class="list-group-item">Chatter. The latest reactJS coding challenge in react-coding-challenges on
+              GitHub
+              <a class="btn btn-primary btn-sm nav-link card-text mb-0 mt-2 p-0 btn-new" href="#" role="button">New</a>
+            </li>
+            <li class="list-group-item">The Best Web Development Challenge Websites
+              <a class="btn btn-primary btn-sm nav-link card-text mb-0 mt-2 p-0 btn-new" href="#" role="button">New</a>
+            </li>
+            <li class="list-group-item">Here Are 7 Fun, Yet Challenging Front-End Ideas You Can Code
+              <a class="btn btn-primary btn-sm nav-link card-text mb-0 mt-2 p-0 btn-new" href="#" role="button">New</a>
+            </li>
+            <li class="list-group-item">Js13kGames swag is finalle out
+              <a class="btn btn-primary btn-sm nav-link card-text mb-0 mt-2 p-0 btn-new" href="#" role="button">New</a>
+            </li>
+          </ul>
+        </div>
+
+
+
+      </aside>
+    </div>
+
+  </main>
+
 
   <footer class="alert-dark">
+    <div class="icon-move d-flex justify-content-end ml-5">
+      <img class="d-none d-md-block" src="https://res.cloudinary.com/practicaldev/image/fetch/s--4RkRuwpj--/c_limit,f_auto,fl_progressive,q_auto,w_100/https://dev-to-uploads.s3.amazonaws.com/i/wmv3mtusjwb3r13d5h2f.png" alt="" width="60">
+    </div>
     <div class="container">
       <div class="row">
-        <div class="col-12 mt-5">
+        <div class="col-12 mt-5 ">
           <ul class="nav justify-content-center">
             <li class="nav-item">
               <a class="nav-link active text-dark" href="#">Home</a>
@@ -246,34 +877,42 @@
           </ul>
         </div>
 
-        <div class="col-12 d-flex justify-content-center my-3 border border-top-0 border-right-0 border-left-0 border-secondary">
+        <div class="col-12 d-flex justify-content-center my-3">
           <a class="pr-3" href="#">
-            <img src="images/twitter-icon.svg" width="30" height="30" alt="">
+            <img class="icon-invert" src="images/twitter-icon.svg" width="30" height="30" alt="">
           </a>
           <a class="px-3" href="#">
-            <img src="images/facebook-icon.svg" width="30" height="30" alt="">
+            <img class="icon-invert" src="images/facebook-icon.svg" width="30" height="30" alt="">
           </a>
           <a class="px-3" href="#">
-            <img src="images/github-icon.svg" width="30" height="30" alt="">
+            <img class="icon-invert" src="images/github-icon.svg" width="30" height="30" alt="">
           </a>
           <a class="px-3" href="#">
-            <img src="images/instagram-icon.svg" width="30" height="30" alt="">
+            <img class="icon-invert" src="images/instagram-icon.svg" width="30" height="30" alt="">
           </a>
           <a class="pl-3" href="#">
-            <img src="images/twitch-icon.svg" width="30" height="30" alt="">
+            <img class="icon-invert" src="images/twitch-icon.svg" width="30" height="30" alt="">
           </a>
+        </div>
+
+        <div class="col-12 d-flex justify-content-center">
+          <div class="col-4 border border-top-0 border-right-0 border-left-0 border-secondary"></div>
         </div>
 
         <div class="col-12 d-flex justify-content-center my-3">
           <div class="col-lg-8 text-center">
-            <p><a class="font-weight-bolder text-dark" href="">DEV Community</a> - A constructive and inclusive social network for software developers. With you every step of your journey.</p>
+            <p><a class="font-weight-bolder text-dark" href="">DEV Community</a> - A constructive and inclusive social
+              network for software developers. With you every step of your journey.</p>
           </div>
         </div>
 
         <div class="col-12 d-flex justify-content-center my-3">
           <div class="col-lg-7 text-center">
-            <p class="font-weight-light">Built on <a class="font-weight-bolder text-dark" href="">Forem</a> -- the <a class="font-weight-bolder text-dark" href="">open source</a> software that powers <a class="font-weight-bolder text-dark" href="">DEV</a> and other inclusive communities.</p>
-            <p>Made with love and <a class="font-weight-bolder text-dark" href="">Ruby on Rails</a>. DEV Community @copy 2016 - 2021.</p>
+            <p class="font-weight-light">Built on <a class="font-weight-bolder text-dark" href="">Forem</a> -- the <a
+                class="font-weight-bolder text-dark" href="">open source</a> software that powers <a
+                class="font-weight-bolder text-dark" href="">DEV</a> and other inclusive communities.</p>
+            <p>Made with love and <a class="font-weight-bolder text-dark" href="">Ruby on Rails</a>. DEV Community @copy
+              2016 - 2021.</p>
             <a href="#"><img src="images/forem-logo.svg" width="30" height="30" alt=""></a>
           </div>
         </div>
@@ -284,7 +923,7 @@
     </div>
   </footer>
 
-  
+
 
 
 
