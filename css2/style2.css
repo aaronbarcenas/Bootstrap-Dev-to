@@ -1,0 +1,533 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.fs-18 {
+  font-size: 18px;
+}
+
+.main-top {
+  padding: 0px 0px 0px 0px;
+}
+
+.main-top .no-border {
+  border: 0px;
+}
+
+.main-top .no-border .react-img {
+  width: 100%;
+}
+
+.main-top .card-body {
+  padding: 12px 12px 0px 12px;
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main-top .card-body h1 {
+  font-size: 30px;
+  color: #08090A;
+  margin-bottom: 16px;
+}
+
+.main-top .hash {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-bottom: 16px;
+  width: 361px;
+}
+
+.main-top .hash #javascript {
+  color: #000000;
+  width: 66.266px;
+  height: 18px;
+  font-size: 14px;
+  background-color: #f7df1e;
+  margin: 0px 8px 0px 0px;
+  padding: 4px;
+  border-radius: 5px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.main-top .hash #javascript:hover {
+  cursor: pointer;
+}
+
+.main-top .hash #react {
+  color: #61daf6;
+  width: 38.813px;
+  height: 18px;
+  font-size: 14px;
+  background-color: #222222;
+  margin: 0px 8px 0px 0px;
+  padding: 4px;
+  border-radius: 5px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.main-top .hash #react:hover {
+  cursor: pointer;
+}
+
+.main-top .hash #beginners {
+  color: #ffffff;
+  width: 69.453px;
+  height: 18px;
+  font-size: 14px;
+  background-color: #008335;
+  margin: 0px 8px 0px 0px;
+  padding: 4px;
+  border-radius: 5px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.main-top .hash #beginners:hover {
+  cursor: pointer;
+}
+
+.main-top .hash #tutorial {
+  color: #b30047;
+  width: 52.672px;
+  height: 18px;
+  font-size: 14px;
+  background-color: #feffa5;
+  margin: 0px 8px 0px 0px;
+  padding: 4px;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.main-top .hash #tutorial:hover {
+  cursor: pointer;
+}
+
+.main-top .time-profile {
+  width: 361px;
+  color: #202428;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.main-top .time-profile a {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  width: 139.41px;
+  height: 32px;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 0px 16px 16px 0px;
+}
+
+.main-top .time-profile a img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 4px;
+}
+
+.main-top .time-profile a:hover {
+  cursor: pointer;
+  color: #3b49df;
+}
+
+.purple {
+  color: #3b49df;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.bottom {
+  padding: 12px;
+}
+
+.bottom .lessons {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 0px;
+  margin-bottom: 16px;
+  margin-top: 16px;
+}
+
+.bottom .lessons .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: auto;
+  padding: 12px, 16px;
+  background-color: #efefef;
+}
+
+.bottom .lessons .item:hover {
+  cursor: pointer;
+  color: #3b49df;
+  background-color: #ffffff;
+}
+
+.bottom .lessons .span-circle {
+  display: block;
+  margin-right: 12px;
+  width: 32px;
+  height: 32px;
+  color: #4d5760;
+  background-color: #eef0f1;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.bottom p {
+  margin-bottom: 18px;
+  font-size: 18px;
+  color: #08090A;
+}
+
+.bottom h2 {
+  font-size: 27px;
+  font-weight: bold;
+}
+
+.border-card {
+  border-top: solid 32px;
+  border-top-color: #551029;
+  padding: 0px 16px 16px 16px;
+  border-radius: .25rem;
+}
+
+.border-card .top-name {
+  margin-bottom: 28px;
+  position: relative;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  padding-left: 65px;
+}
+
+.border-card img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin-right: 4px;
+  position: absolute;
+  top: -10px;
+  left: 10px;
+}
+
+.border-card .btn {
+  width: 18rem;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  background-color: #3b49df;
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.border-card .key {
+  color: #64707D;
+  font-size: 12px;
+  margin-bottom: 2px;
+  font-weight: bold;
+}
+
+.border-card .value {
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: #202428;
+}
+
+.item2 {
+  width: auto;
+  padding: 16px;
+  background-color: #efefef;
+}
+
+.item2 div {
+  font-size: 12px;
+  color: #64707D;
+  text-align: justify;
+}
+
+.item2:hover {
+  cursor: pointer;
+  color: #3b49df;
+  background-color: #ffffff;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------*/
+@media only screen and (min-width: 900px) {
+  .row {
+    padding: 16px;
+  }
+  .main-top {
+    padding: 0px 16px 16px 16px;
+  }
+  .main-top .no-border {
+    border: 0px;
+  }
+  .main-top .no-border .react-img {
+    width: 100%;
+    height: 338.672px;
+  }
+  .main-top .card-body {
+    padding: 32px 64px 0px 64px;
+    width: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .main-top .card-body h1 {
+    font-size: 48px;
+    color: #08090A;
+    margin-bottom: 16px;
+    font-weight: bold;
+  }
+  .main-top .hash {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-bottom: 16px;
+    width: 361px;
+  }
+  .main-top .hash #javascript {
+    color: #000000;
+    width: 66.266px;
+    height: 18px;
+    font-size: 14px;
+    background-color: #f7df1e;
+    margin: 0px 8px 0px 0px;
+    padding: 4px;
+    border-radius: 5px;
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+  }
+  .main-top .hash #javascript:hover {
+    cursor: pointer;
+  }
+  .main-top .hash #react {
+    color: #61daf6;
+    width: 38.813px;
+    height: 18px;
+    font-size: 14px;
+    background-color: #222222;
+    margin: 0px 8px 0px 0px;
+    padding: 4px;
+    border-radius: 5px;
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+  }
+  .main-top .hash #react:hover {
+    cursor: pointer;
+  }
+  .main-top .hash #beginners {
+    color: #ffffff;
+    width: 69.453px;
+    height: 18px;
+    font-size: 14px;
+    background-color: #008335;
+    margin: 0px 8px 0px 0px;
+    padding: 4px;
+    border-radius: 5px;
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+  }
+  .main-top .hash #beginners:hover {
+    cursor: pointer;
+  }
+  .main-top .hash #tutorial {
+    color: #b30047;
+    width: 52.672px;
+    height: 18px;
+    font-size: 14px;
+    background-color: #feffa5;
+    margin: 0px 8px 0px 0px;
+    padding: 4px;
+    border-radius: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+  }
+  .main-top .hash #tutorial:hover {
+    cursor: pointer;
+  }
+  .main-top .time-profile {
+    width: 361px;
+    color: #202428;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+  .main-top .time-profile a {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    width: 139.41px;
+    height: 32px;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0px 16px 16px 0px;
+  }
+  .main-top .time-profile a img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 4px;
+  }
+  .main-top .time-profile a:hover {
+    cursor: pointer;
+    color: #3b49df;
+  }
+  .purple {
+    color: #3b49df;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .bottom {
+    padding: 32px 64px;
+  }
+  .bottom .lessons {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 24px 64.203px;
+  }
+  .bottom .lessons .item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: auto;
+    padding: 12px, 16px;
+    background-color: #efefef;
+  }
+  .bottom .lessons .item:hover {
+    cursor: pointer;
+    color: #3b49df;
+    background-color: #ffffff;
+  }
+  .bottom .lessons .span-circle {
+    display: block;
+    margin-right: 12px;
+    width: 32px;
+    height: 32px;
+    color: #4d5760;
+    background-color: #eef0f1;
+    border-radius: 50%;
+    text-align: center;
+  }
+  .bottom p {
+    margin-bottom: 18px;
+    font-size: 18px;
+    color: #08090A;
+  }
+  .bottom h2 {
+    font-size: 27px;
+    font-weight: bold;
+  }
+}
+
+.aside-div {
+  width: 313.594px;
+}
+
+.border-card {
+  border-top: solid 32px;
+  border-top-color: #551029;
+  padding: 0px 16px 16px 16px;
+  border-radius: .25rem;
+}
+
+.border-card .top-name {
+  margin-bottom: 28px;
+  position: relative;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  padding-left: 65px;
+}
+
+.border-card img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin-right: 4px;
+  position: absolute;
+  top: -10px;
+  left: 10px;
+}
+
+.border-card .btn {
+  width: 15rem;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  background-color: #3b49df;
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.border-card .key {
+  color: #64707D;
+  font-size: 12px;
+  margin-bottom: 2px;
+  font-weight: bold;
+}
+
+.border-card .value {
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: #202428;
+}
+
+.item2 {
+  width: auto;
+  padding: 16px;
+  background-color: #efefef;
+}
+
+.item2 div {
+  font-size: 12px;
+  color: #64707D;
+  text-align: justify;
+}
+/*# sourceMappingURL=style2.css.map */

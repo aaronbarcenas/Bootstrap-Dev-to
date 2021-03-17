@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="css2/style2.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="container-fluid">
+        <div class="row">
+            <section class="col-lg-2 bg-secondary">
+
+            </section>
+            <main class="col-sm-12 col-lg-6 main-top">
+                <div class="card no-border">
+                    <img src="images/react.jpg" class="img-fluid react-img" alt="Responsive image">
+                    <div class="card-body">
+                        <h1><b>React 101 - part 7: useEffect</b></h1>
+                        <div class="hash">
+                            <div id="javascript">#javascript</div>
+                            <div id="react">#react</div>  
+                            <div id="beginners">#beginners</div>
+                            <div id="tutorial">#tutorial</div>
+                        </div>
+                        <div class="time-profile">
+                            <a>
+                                <span>
+                                    <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--B0ll5w6t--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/342897/21a83af2-0cfd-425d-9478-0c9f7fd0c83e.jpg">
+                                </span>
+
+                                Erik Chapman
+                            
+                            </a>
+                            <span>
+                                <time datetime="2011-11-18 14:54:39.929-04:00">Mar 12</time>
+                                <span>・3 min read</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="card lessons">
+                        <div class="card-header purple ">
+                            React 101 (7 Part Series)
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item item">
+                                <span class="span-circle">1</span>
+                                <span>React 101 - part 1: First Steps</span>
+                            </li>
+                            <li class="list-group-item item">
+                                <span class="span-circle">2</span>
+                                <span>React 101 - part 2: First Component</span>
+                            </li>
+                            <li class="list-group-item item">
+                                <span class="span-circle">...</span>
+                                <span>5 more parts...</span>
+                            </li>
+                            <li class="list-group-item item">
+                                <span class="span-circle">6</span>
+                                <span>React 101 - part 6: Function Components</span>
+                            </li>
+                            <li class="list-group-item item">
+                                <span class="span-circle">7</span>
+                                <span>React 101 - part 7: useEffect</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <p> After my javascript series:
+                        <a href="https://dev.to/rickavmaniac/javascript-my-learning-journey-part-1-what-is-javascript-role-and-use-case-49a3">https://dev.to/rickavmaniac/javascript-my-learning-journey-part-1-what-is-javascript-role-and-use-case-49a3</a>
+                    </p>
+                    <p>I am now ready to begin my React learning journey :)</p>
+                    <p>Click follow if you want to miss nothing. I will publish here on Dev.to what I learn from my React course the day before.</p>
+                    <p>Without further ado here is a summary of my notes for day 7.</p>
+                    <h2>useEffect Hook</h2>
+                    <p>Since we no longer use React class component how we will be able to use lifecycle like componentDidMount and componentWillUnmount?</p>
+                    <p>The React replacement for lifecycle method is a Hook call useEffect.</p>
+                    <p>useEffect Hook runs after every render (by default), and can optionally clean up for itself before it runs again.</p>
+                    <p>Rather than thinking of useEffect as one function doing the job of 3 separate lifecycles, it might be more helpful to think of it simply as a way to run side effects after render – including the potential cleanup you’d want to do before each one, and before unmounting.</p>
+                    <p>To understand useEffect, let revisit our Counter component.</p>
+                    <img src="images/img1.jfif" class="img-fluid" alt="Responsive image">
+                    <p>Let say we want to change the page title every time the count state change. How to do that? useEffect!</p>
+                    <p>First we need to import useEffect from 'react'
+                        Second we call the useEffect() that return a function</p>
+                    <img src="images/img2.jfif" class="img-fluid" alt="Responsive image">
+                    <p>With that new code, every time the state of my component change. The useEffect() is call.</p>
+                    <p>If we want to change the title only when the count state change and not every time anything change, we can add a parameter to useEffect: useEffect(callback, [array of variables to watch])</p>
+                    <img src="images/img3.jfif" class="img-fluid" alt="Responsive image">
+                    <p>If we execute the useEffect with noting in the array: useEffect(callback, []) then the callback will be execute only on first load. So that will literally do the same as componentDidMount() lifecycle</p>
+                    <p>Example this can be handy to set a timer</p>
+                    <img src="images/img4.jfif" class="img-fluid" alt="Responsive image">
+                    <p>If we want to cancel the timer when the component is unmount like componentWillUnmount() we just have to place a return function at the end of useEffect.</p>
+                    <p>This useEffect return function is execute each time the component unmount. Think at this return function like a cleaning code when the component unmount.</p>
+                    <h2>Conclusion</h2>
+                    <p>That's it for this course. I know there a lot to be learn, but this course was React 101 and I think I reach my goal to learn the very basic. My advice is practice what you have learn so far and when you feel comfortable with the basic you can reach for more :-)</p>
+                    <div class="card lessons">
+                        <div class="card-header purple ">
+                            React 101 (7 Part Series)
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item item">
+                                <span class="span-circle">1</span>
+                                <span>React 101 - part 1: First Steps</span>
+                            </li>
+                            <li class="list-group-item item">
+                                <span class="span-circle">2</span>
+                                <span>React 101 - part 2: First Component</span>
+                            </li>
+                            <li class="list-group-item item">
+                                <span class="span-circle">...</span>
+                                <span>5 more parts...</span>
+                            </li>
+                            <li class="list-group-item item">
+                                <span class="span-circle">6</span>
+                                <span>React 101 - part 6: Function Components</span>
+                            </li>
+                            <li class="list-group-item item">
+                                <span class="span-circle">7</span>
+                                <span>React 101 - part 7: useEffect</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="d-flex justify-content-center row">
+                            <div class="col-md-8">
+                                <div class="d-flex flex-column comment-section">
+                                    <div class="bg-white p-2">
+                                        
+                                    </div>
+                                    <div class="bg-white">
+                                        
+                                        
+                                    </div>
+                                    <div class="bg-light p-2">
+                                        <div class="d-flex flex-row align-items-start"><img class="rounded-circle" src="https://i.imgur.com/RpzrMR2.jpg" width="40"><textarea class="form-control ml-1 shadow-none textarea"></textarea></div>
+                                        <div class="mt-2 text-right"><button class="btn purple btn-sm shadow-none" type="button">Post comment</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <aside class="col-sm-12 col-lg-4">
+                <div class="sticky-top aside-div">
+                <div class="card-body m-0 border-card">
+                    <div class="top-name">
+                        <div class="fs-18">
+                            <span><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--B0ll5w6t--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/342897/21a83af2-0cfd-425d-9478-0c9f7fd0c83e.jpg"></span>
+                        <b>Erik Chapman</b>
+                        </div>
+                        
+                    </div>
+                    <a href="#" class="btn btn-primary">Follow</a>
+                    <div class="key">LOCATION</div>
+                    <div class="value">Canada</div>
+                    <div class="key">JOINED</div>
+                    <div class="value">Sep 2, 2020</div>
+                        
+                </div>
+                <div class="card lessons">
+                    <div class="card-header purple item2">
+                        More from Erik Chapman
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item item2">React 101 - part 6: Function Components
+                            <div>#javascrip #react #beginners #tutorial</div></li>
+                        <li class="list-group-item item2">React 101 - part 5: Create React app
+                            <div>#javascrip #react #beginners #tutorial</div></li>
+                        <li class="list-group-item item2">React 101 - part 2: First Component
+                            <div>#javascrip #react #beginners #tutorial</div></li>
+                    </ul>
+                </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+</body>
+</html>
