@@ -57,6 +57,11 @@ body {
 .title-hx:hover {
   color: $primary-blue !important;
   text-decoration: none !important;
+  list-style: none !important;
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 .btn-hover:hover {
@@ -75,9 +80,8 @@ body {
 }
 
 .icon-move {
-  background-repeat: no-repeat;
-  background-position-x: 100%;
   position: absolute;
+  right: 40px;
 
   &:hover {
     transform: rotate(10deg);
@@ -88,3 +92,14 @@ body {
   border-bottom: 1px solid #999 ;
 }
 
+.link-sw {
+  color: #333;
+  &:hover {
+    background-color: $light-grey;
+    border-radius: 5px;
+  }
+}
+
+.link-active {
+  border-bottom: 2px solid $primary-blue;
+}
