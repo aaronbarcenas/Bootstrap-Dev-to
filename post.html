@@ -9,21 +9,183 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <nav
+    class="container navbar navbar-expand-lg navbar-light bg-light border border-top-0 border-right-0 border-left-0 border-gradient-secondary justify-content-between px-0">
+    <div class="d-flex align-items-center col-6 pl-0">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#"><img src="images/devto.svg" width="37" height="40" alt=""></a>
+      <form class="form-inline my-2 my-lg-0 d-none d-lg-block">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search..." aria-label="Search">
+      </form>
+    </div>
+
+    <div class="right-wrap d-flex align-items-center col-6 justify-content-end pr-0">
+      <button class="btn btn-primary d-none d-lg-block color-blue" type="button">Write a post</button>
+      <img class="d-lg-none px-2 navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSearchContent"
+        aria-controls="navbarSearchContent" aria-expanded="false" aria-label="Toggle navigation"
+        src="images/lupa-icon.svg" alt="lupa-icon">
+      <img class="px-2" type="button" data-toggle="collapse" data-target="#navbarWriteContent"
+        aria-controls="navbarWriteContent" aria-expanded="false" aria-label="Toggle navigation"
+        src="images/message-icon.svg" alt="write-icon">
+      <img class="pl-2 pr-3" type="button" data-toggle="collapse" data-target="#navbarBellContent"
+        aria-controls="navbarBellContent" aria-expanded="false" aria-label="Toggle navigation"
+        src="images/bell-icon.svg" alt="bell-icon">
+      <img class="rounded-circle"
+        src="https://res.cloudinary.com/practicaldev/image/fetch/s--jl25ieQ4--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/570253/d305dc25-89e7-4959-bba9-f85ff315a1c7.jpeg"
+        width="30" height="30" alt="">
+    </div>
+
+
+    <!-- Menu-mobile emergente del menu hamburguesa -->
+    <div class="collapse" id="navbarSupportedContent">
+      <div class="border border-top-0 border-right-0 border-left-0 border-secondary p-4">
+        <h5 class="font-weight-bolder">DEV Community</h5>
+        <img src="images/close.svg" alt="">
+      </div>
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active d-flex pt-2">
+          <img class="px-2" src="images/home-icon.svg" alt="Home">
+          <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active d-flex pt-2">
+          <img class="px-2" src="images/reading-icon.svg" alt="Reading">
+          <a class="nav-link" href="#">Reading List</a>
+        </li>
+        <li class="nav-item active d-flex pt-2">
+          <img class="px-2" src="images/listings-icon.svg" alt="Listings">
+          <a class="nav-link" href="#">Listings</a>
+        </li>
+        <li class="nav-item active d-flex pt-2">
+          <img class="px-2" src="images/podcasts-icon.svg" alt="Podcasts">
+          <a class="nav-link" href="#">Podcasts</a>
+        </li>
+        <li class="nav-item active d-flex pt-2">
+          <img class="px-2" src="images/videos-icon.svg" alt="videos">
+          <a class="nav-link" href="#">Videos</a>
+        </li>
+        <li class="nav-item active d-flex pt-2">
+          <img class="px-2" src="images/tags-icon.svg" alt="tags">
+          <a class="nav-link" href="#">Tagss</a>
+        </li>
+        <li class="nav-item d-flex pt-2">
+          <a class="nav-link pl-5" href="#">More...</a>
+        </li>
+      </ul>
+
+
+
+      <!--
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Dropdown
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+      -->
+    </div>
+
+    <!-- Menu-mobile emergente del icono de busqueda -->
+    <div class="collapse bg-gradient-secondary" id="navbarSearchContent">
+
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search..." aria-label="Search">
+      </form>
+
+      <h4 class="font-weight-bolder my-3">Search results</h4>
+
+      <ul class="nav">
+        <li class="nav-item border border-top-0 border-right-0 border-left-0 border-primary">
+          <a class="nav-link active text-dark font-weight-bold" href="#">Most Revelant</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="#">Newest</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="#">Oldest</a>
+        </li>
+      </ul>
+
+      <ul class="nav flex-column">
+        <li class="nav-item mt-4 mb-1">
+          <a class="nav-link active text-dark" href="#">Posts</a>
+        </li>
+        <li class="nav-item my-1">
+          <a class="nav-link active text-dark" href="#">Podcasts</a>
+        </li>
+        <li class="nav-item my-1">
+          <a class="nav-link active text-dark" href="#">People</a>
+        </li>
+        <li class="nav-item my-1">
+          <a class="nav-link active text-dark" href="#">Comments</a>
+        </li>
+        <li class="nav-item my-1">
+          <a class="nav-link active text-dark" href="#">My posts only</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Menu-mobile del icono de write -->
+    <div class="collapse vh-100" id="navbarWriteContent">
+      <form class="form-inline d-flex justify-content-between">
+        <div class="form-group mx-sm-5 mb-2">
+          <input type="text" class="form-control" placeholder="Write message to">
+        </div>
+        <button type="submit" class="btn btn-primary mb-2 ml-2">Send</button>
+      </form>
+    </div>
+
+    <!-- Menu-mobile del bell-icon -->
+    <div class="collapse vh-100" id="navbarBellContent">
+      <div class="d-flex justify-content-between border-bottom-secondary p-4">
+        <h5 class="font-weight-bolder">Notifications</h5>
+        <a class="text-muted" href="#">Settings</a>
+      </div>
+      <ul class="nav d-flex justify-content-around">
+        <li class="nav-item border border-top-0 border-right-0 border-left-0 border-primary">
+          <a class="nav-link active text-dark font-weight-bold" href="#">All</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="#">Comments</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="#">Posts</a>
+        </li>
+      </ul>
+    </div>
+
+  </nav>
+
     <div class="container">
         <div class="row">
             <section class="col-lg-1 gray pl-lg-5">
                 <div class="pt-5 mt-5 sticky-top">
                     <nav class="nav flex-column d-flex align-items-center offset-sm-1">
-                        <a class="nav-link active" href="#"><svg class="crayons-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M18.884 12.595l.01.011L12 19.5l-6.894-6.894.01-.01A4.875 4.875 0 0112 5.73a4.875 4.875 0 016.884 6.865zM6.431 7.037a3.375 3.375 0 000 4.773L12 17.38l5.569-5.569a3.375 3.375 0 10-4.773-4.773L9.613 10.22l-1.06-1.062 2.371-2.372a3.375 3.375 0 00-4.492.25v.001z"></path></svg></a>
-                        <a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" role="img" aria-labelledby="aexw7l2dlrgosm3rpf7o7w2abc2qg3m0" class="crayons-icon"><title id="aexw7l2dlrgosm3rpf7o7w2abc2qg3m0">Unicorn</title>
+                        <a class="nav-link2 active" href="#"><svg class="crayons-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M18.884 12.595l.01.011L12 19.5l-6.894-6.894.01-.01A4.875 4.875 0 0112 5.73a4.875 4.875 0 016.884 6.865zM6.431 7.037a3.375 3.375 0 000 4.773L12 17.38l5.569-5.569a3.375 3.375 0 10-4.773-4.773L9.613 10.22l-1.06-1.062 2.371-2.372a3.375 3.375 0 00-4.492.25v.001z"></path></svg></a>
+                        <a class="nav-link2" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" role="img" aria-labelledby="aexw7l2dlrgosm3rpf7o7w2abc2qg3m0" class="crayons-icon"><title id="aexw7l2dlrgosm3rpf7o7w2abc2qg3m0">Unicorn</title>
                             <path d="M5.645 8.013c.013-.265-.261-.323-.4-.183-1.16 1.17-1.822 3.865-.344 7.32.294.961 1.938 3.19.84 6.131l-.003.006c-.094.255.206.404.366.263 1.395-1.226 1.933-3.593 1.1-6.375-.488-1.657-1.955-4.226-1.559-7.162zm-3.22 2.738c.05-.137-.124-.417-.326-.225-.939.893-1.316 2.863-.976 4.605.547 2.878 2.374 3.526 2.066 6.629-.028.102.176.38.348.154 1.546-2.033.409-4.453-.241-6.006-1.005-2.386-1.087-4.118-.871-5.157z" fill="#08090A"></path>
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M13.622 7.223l8.579-3.68c.598-.256 1.087.547.6.985l-6.618 5.941c.881 2.043 2.738 6.34 2.931 6.775 1.348 3.031-2.055 4.918-3.807 3.583a7.027 7.027 0 01-.623-.574c-.974-.965-2.419-2.398-5.207-1.877.284-2.115-.313-3.737-.883-5.288-.38-1.032-.747-2.032-.837-3.124-.346-3.329 3.763-8.23 4.696-7.953.386.115.326 1.229.266 2.319-.051.948-.102 1.88.143 2.12.145.142.428.43.76.773zM11.5 16.5l2.5.5 2.5 2 1-.5-2-4.5-1.5-4-1.5-1-1-1-1-1.5L10 8l-.5 1.5 1 2.5 1 4.5z"></path>
                         </svg></a>
-                        <a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><title id="afegr5jklq5bnzypg659k9u1pmygpt0h">Saved</title>
+                        <a class="nav-link2" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><title id="afegr5jklq5bnzypg659k9u1pmygpt0h">Saved</title>
                             <path d="M5 2h14a1 1 0 011 1v19.143a.5.5 0 01-.766.424L12 18.03l-7.234 4.536A.5.5 0 014 22.143V3a1 1 0 011-1zm13 2H6v15.432l6-3.761 6 3.761V4z"></path>
                         </svg></a>
-                        <a class="nav-link disabled" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" role="img" aria-labelledby="a6y93wyfj1o9q8l9qougi0dzm6iqp1yk" class="dropdown-icon crayons-icon"><title id="a6y93wyfj1o9q8l9qougi0dzm6iqp1yk">More...</title><path fill-rule="evenodd" clip-rule="evenodd" d="M7 12a2 2 0 11-4 0 2 2 0 014 0zm7 0a2 2 0 11-4 0 2 2 0 014 0zm5 2a2 2 0 100-4 2 2 0 000 4z"></path></svg></a>
+                        <a class="nav-link2 disabled" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" role="img" aria-labelledby="a6y93wyfj1o9q8l9qougi0dzm6iqp1yk" class="dropdown-icon crayons-icon"><title id="a6y93wyfj1o9q8l9qougi0dzm6iqp1yk">More...</title><path fill-rule="evenodd" clip-rule="evenodd" d="M7 12a2 2 0 11-4 0 2 2 0 014 0zm7 0a2 2 0 11-4 0 2 2 0 014 0zm5 2a2 2 0 100-4 2 2 0 000 4z"></path></svg></a>
                     </nav>
                 </div>
             </section>
@@ -148,7 +310,8 @@
                                         
                                     </div>
                                     <div class="bg-light p-2">
-                                        <div class="d-flex flex-row align-items-start"><img class="rounded-circle" src="https://i.imgur.com/RpzrMR2.jpg" width="40"><textarea class="form-control ml-1 shadow-none textarea"></textarea></div>
+                                        <div class="d-flex flex-row align-items-start"><img class="rounded-circle" src="https://res.cloudinary.com/practicaldev/image/fetch/s--cfIu03nH--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/319175/d2dd8825-6a90-429a-ba3e-70b5c3e19557.png
+                                            " width="40"><textarea class="form-control ml-1 shadow-none textarea"></textarea></div>
                                         <div class="mt-2 text-right"><button class="btn purple btn-sm shadow-none" type="button">Post comment</button>
                                     </div>
                                 </div>
@@ -167,7 +330,7 @@
                         </div>
                         
                     </div>
-                    <a href="#" class="btn btn-primary">Follow</a>
+                    <a href="#" class="btn btn-primary w-75">Follow</a>
                     <div class="key">LOCATION</div>
                     <div class="value">Canada</div>
                     <div class="key">JOINED</div>
@@ -191,6 +354,110 @@
             </aside>
         </div>
     </div>
+
+    <footer class="alert-dark d-flex">
+
+        <div class="container">
+          <div class="row">
+            <div class="col-12 mt-5 ">
+              <ul class="nav justify-content-center alert-dark back-grey alert-dark">
+                <li class="nav-item back-grey">
+                  <a class="nav-link active text-dark back-grey alert-dark" href="#">Home</a>
+                </li>
+                <li class="nav-item alert-dark">
+                  <a class="nav-link active text-dark alert-dark  back-grey" href="#">Reading List</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active text-dark back-grey" href="#">Listings</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active text-dark back-grey" href="#">Podcasts</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active text-dark back-grey" href="#">Videos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active text-dark back-grey" href="#">Tags</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active text-dark back-grey" href="#">Code of Conduct</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active text-dark back-grey" href="#">FAQ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active text-dark back-grey" href="#">DEV Shop</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active text-dark back-grey" href="#">Sponsors</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active text-dark back-grey" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active text-dark back-grey" href="#">Privacy Policy</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active text-dark back-grey" href="#">Terms of use</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active text-dark back-grey" href="#">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active text-dark font-weight-bolder back-grey" href="#">Write a post</a>
+                </li>
+              </ul>
+            </div>
+    
+            <div class="col-12 d-flex justify-content-center my-3">
+              <a class="pr-3" href="#">
+                <img class="icon-invert" src="images/twitter-icon.svg" width="30" height="30" alt="">
+              </a>
+              <a class="px-3" href="#">
+                <img class="icon-invert" src="images/facebook-icon.svg" width="30" height="30" alt="">
+              </a>
+              <a class="px-3" href="#">
+                <img class="icon-invert" src="images/github-icon.svg" width="30" height="30" alt="">
+              </a>
+              <a class="px-3" href="#">
+                <img class="icon-invert" src="images/instagram-icon.svg" width="30" height="30" alt="">
+              </a>
+              <a class="pl-3" href="#">
+                <img class="icon-invert" src="images/twitch-icon.svg" width="30" height="30" alt="">
+              </a>
+            </div>
+    
+            <div class="col-12 d-flex justify-content-center">
+              <div class="col-4 border-gray"></div>
+            </div>
+    
+            <div class="col-12 d-flex justify-content-center my-3">
+              <div class="col-lg-8 text-center">
+                <p><a class="font-weight-bolder text-dark" href="">DEV Community</a> - A constructive and inclusive social
+                  network for software developers. With you every step of your journey.</p>
+              </div>
+            </div>
+    
+            <div class="col-12 d-flex justify-content-center my-3">
+              <div class="col-lg-7 text-center">
+                <p class="font-weight-light">Built on <a class="font-weight-bolder text-dark" href="">Forem</a> -- the <a
+                    class="font-weight-bolder text-dark" href="">open source</a> software that powers <a
+                    class="font-weight-bolder text-dark" href="">DEV</a> and other inclusive communities.</p>
+                <p>Made with love and <a class="font-weight-bolder text-dark" href="">Ruby on Rails</a>. DEV Community @copy
+                  2016 - 2021.</p>
+                <a href="#"><img src="images/forem-logo.svg" width="30" height="30" alt=""></a>
+              </div>
+            </div>
+    
+    
+    
+          </div>
+        </div>
+        <div class="icon-move d-flex justify-content-end ml-5">
+          <img class="d-none d-md-block" src="https://res.cloudinary.com/practicaldev/image/fetch/s--4RkRuwpj--/c_limit,f_auto,fl_progressive,q_auto,w_100/https://dev-to-uploads.s3.amazonaws.com/i/wmv3mtusjwb3r13d5h2f.png" alt="" width="60">
+        </div>
+    
+      </footer>
 
 
 

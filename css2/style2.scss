@@ -6,6 +6,9 @@ $main-padding: 0px 0px 0px 0px;
 $small-font-size: 14px;
 $medium-font-size: 16px;
 $large-font-size: 18px;
+$primary-blue:#3b49df;
+$very-light-grey:#EEF0F1;
+$light-grey:#E2E4E6;
 
 
 
@@ -18,13 +21,63 @@ $large-font-size: 18px;
 .gray{
     background-color: #eef0f1;
 }
+
 .fs-18{
     font-size: 18px;
 }
+
 body{
     background-color: #eef0f1;
 }
-.nav-link{
+
+.color-blue {
+    background-color:$primary-blue;
+    font-size: 18px;
+    border: 1px solid $primary-blue;
+}
+
+  
+  a:hover {
+    text-decoration: none;
+  }
+  
+  
+  
+  .icon-invert:hover {
+    filter: invert(100%);
+  }
+  
+  .icon-move {
+    position: absolute;
+    right: 40px;
+  
+    &:hover {
+      transform: rotate(10deg);
+    }
+  }
+
+  .back-grey {
+      background-color: #d3d3d4 !important;
+  }
+  
+  .border-gray {
+    border-bottom: 1px solid #999 ;
+  }
+  
+  .link-sw {
+    color: #333;
+    &:hover {
+      background-color: $light-grey;
+      border-radius: 5px;
+    }
+  }
+  
+  .link-active {
+    border-bottom: 2px solid $primary-blue;
+  }
+
+
+.nav-link2{
     
     position: fixed;
     left: 0;
