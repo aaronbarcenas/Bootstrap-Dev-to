@@ -113,4 +113,21 @@ a:hover {
   .margin-right-icon {
     margin-right: 12px;
   }
+
+  .text-movile {
+    margin-left: 0;
+    h2, h4 {
+      font-size: 20px;
+      margin-left: 0 !important;
+    }
+
+    nav {
+      margin: 0 0 0 0 !important;
+
+    }
+  }
+
+  .card-body-padding {
+    padding: 12px;
+  }
 }

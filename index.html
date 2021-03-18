@@ -14,8 +14,8 @@
 
 <body>
 
-  <nav class="container-fluit bg-light border border-top-0 border-right-0 border-left-0 border-gradient-secondary">
-    <div class="container navbar navbar-expand-md navbar-light bg-light  justify-content-between px-0">
+  <nav class="container-fluit bg-light border border-top-0 border-right-0 border-left-0 border-gradient-secondary sticky-top">
+    <div class="container navbar navbar-expand-md navbar-light bg-light  justify-content-between px-0 py-0">
     <div class="d-flex align-items-center col-6 pl-0">
       <button class="navbar-toggler border-top-0 border-right-0 border-left-0 border-bottom-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -178,10 +178,10 @@
   </nav>
 
   <!-- ¿ Como ocultar esta nav cuando uno de los icons sean activados ?-->
-  <nav class="navbar navbar-light d-md-none alert-secondary">
+  <nav class="navbar navbar-light d-md-none alert-secondary py-0">
     <span class="navbar-brand mb-0 h1">Posts</span>
     <div class="btn-group" role="group">
-      <button id="btnGroupDrop1" type="button" class="btn btn-outline-secondary dropdown-toggle" data-toggle="dropdown"
+      <button id="btnGroupDrop1" type="button" class="btn btn-outline-secondary dropdown-toggle p-1" data-toggle="dropdown"
         aria-haspopup="true" aria-expanded="false">
         Feed
       </button>
@@ -315,7 +315,7 @@
           <img
             src="https://res.cloudinary.com/practicaldev/image/fetch/s--6rFGdRJR--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/9gc18fb42jzilijelslx.png"
             class="card-img-top" alt="...">
-          <div class="card-body">
+          <div class="card-body card-body-padding">
             <div class="container">
               <div class="row">
                 <div class="mb-2">
@@ -329,19 +329,19 @@
                 </div>
               </div>
             </div>
-            <a href="#">
+            <a class="text-movile" href="#">
               <h2 class="card-title text-dark font-weight-bolder ml-4 mb-1 title-hx">CSS Grid Cheat Sheet Ilustrated in 2021 🎖️
               </h2>
-              <nav class="nav ml-3">
-                <a class="nav-link text-dark" href="#">&#35tutorial</a>
-                <a class="nav-link text-dark" href="#">&#35beginners</a>
-                <a class="nav-link text-dark" href="#">&#35webdev</a>
-                <a class="nav-link text-dark" href="#">&#35css</a>
+              <nav class="nav ml-md-3">
+                <a class="nav-link text-dark pl-0 pr-2 px-md-3" id="tags-mobile" href="#">&#35tutorial</a>
+                <a class="nav-link text-dark px-2 px-md-3" href="#">&#35beginners</a>
+                <a class="nav-link text-dark px-2 px-md-3" href="#">&#35webdev</a>
+                <a class="nav-link text-dark px-2 px-md-3" href="#">&#35css</a>
               </nav>
             </a>
             <div class="row d-flex justify-content-between">
-              <div class="col-6 col-md-8 pr-0">
-                <nav class="nav ml-3">
+              <div class="col-6 col-md-8 pr-0 pl-0 pl-md-3">
+                <nav class="nav ml-md-4 ml-1">
                   <a class="nav-link d-flex flex-row align-items-center pl-1 pr-0" href="#">
                     <img src="images/heart-icon.svg" alt="" width="30" height="30">
                     <p class="nav-link card-text pl-0"><small class="text-muted d-flex w-100">15<span
@@ -364,7 +364,7 @@
         </div>
 
         <div class="card mb-3">
-          <div class="card-body">
+          <div class="card-body card-body-padding">
             <div class="container">
               <div class="row">
                 <div class="mb-2">
@@ -378,20 +378,20 @@
                 </div>
               </div>
             </div>
-            <a href="#">
+            <a class="text-movile" href="#">
               <h4 class="card-title text-dark font-weight-bolder ml-4 mb-1 title-hx">
                 An HTML and CSS only dark/mode toggle button.
               </h4>
-              <nav class="nav ml-3">
-                <a class="nav-link text-dark" href="#">&#35html</a>
-                <a class="nav-link text-dark" href="#">&#35css</a>
-                <a class="nav-link text-dark" href="#">&#35a11y</a>
-                <a class="nav-link text-dark" href="#">&#35javascript</a>
+              <nav class="nav ml-md-3">
+                <a class="nav-link text-dark pl-0 pr-2 px-md-3" href="#">&#35html</a>
+                <a class="nav-link text-dark px-2 px-md-3" href="#">&#35css</a>
+                <a class="nav-link text-dark px-2 px-md-3" href="#">&#35a11y</a>
+                <a class="nav-link text-dark px-2 px-md-3" href="#">&#35javascript</a>
               </nav>
             </a>
             <div class="row d-flex justify-content-between">
-              <div class="col-6 col-md-8 pr-0">
-                <nav class="nav ml-3">
+              <div class="col-6 col-md-8 pr-0 pl-0 pl-md-3">
+                <nav class="nav ml-md-4 ml-1">
                   <a class="nav-link d-flex flex-row align-items-center pl-1 pr-0" href="#">
                     <img src="images/heart-icon.svg" alt="" width="30" height="30">
                     <p class="nav-link card-text pl-0"><small class="text-muted d-flex w-100">21<span
@@ -416,7 +416,7 @@
 
 
         <div class="card mb-3">
-          <div class="card-body">
+          <div class="card-body card-body-padding">
             <div class="container">
               <div class="row">
                 <div class="mb-2">
@@ -430,20 +430,20 @@
                 </div>
               </div>
             </div>
-            <a href="#">
+            <a class="text-movile" href="#">
               <h4 class="card-title text-dark font-weight-bolder ml-4 mb-1 title-hx">
                 How to make a mouse ripple click effect with CSS, JS and HTML in 2 steps 🖱️⚪
               </h4>
-              <nav class="nav ml-3">
-                <a class="nav-link text-dark" href="#">&#35css</a>
-                <a class="nav-link text-dark" href="#">&#35html</a>
-                <a class="nav-link text-dark" href="#">&#35javascript</a>
-                <a class="nav-link text-dark" href="#">&#35webdev</a>
+              <nav class="nav ml-md-3">
+                <a class="nav-link text-dark pl-0 pr-2 px-md-3" href="#">&#35css</a>
+                <a class="nav-link text-dark px-2 px-md-3" href="#">&#35html</a>
+                <a class="nav-link text-dark px-2 px-md-3" href="#">&#35javascript</a>
+                <a class="nav-link text-dark px-2 px-md-3" href="#">&#35webdev</a>
               </nav>
             </a>
             <div class="row d-flex justify-content-between">
-              <div class="col-6 col-md-8 pr-0">
-                <nav class="nav ml-3">
+              <div class="col-6 col-md-8 pr-0 pl-0 pl-md-3">
+                <nav class="nav ml-md-4 ml-1">
                   <a class="nav-link d-flex flex-row align-items-center pl-1 pr-0" href="#">
                     <img src="images/heart-icon.svg" alt="" width="30" height="30">
                     <p class="nav-link card-text pl-0"><small class="text-muted d-flex w-100">54<span
@@ -466,7 +466,7 @@
         </div>
 
         <div class="card mb-3">
-          <div class="card-body">
+          <div class="card-body card-body-padding">
             <div class="container">
               <div class="row">
                 <div class="mb-2">
@@ -480,20 +480,20 @@
                 </div>
               </div>
             </div>
-            <a href="#">
+            <a class="text-movile" href="#">
               <h4 class="card-title text-dark font-weight-bolder ml-4 mb-1 title-hx">
                 🚀10 Trending projects on GitHub for web developers - 12th March 2021
               </h4>
-              <nav class="nav ml-3">
-                <a class="nav-link text-dark" href="#">&#35javascript</a>
-                <a class="nav-link text-dark" href="#">&#35react</a>
-                <a class="nav-link text-dark" href="#">&#35css</a>
-                <a class="nav-link text-dark" href="#">&#35webdev</a>
+              <nav class="nav ml-md-3">
+                <a class="nav-link text-dark pl-0 pr-2 px-md-3" href="#">&#35javascript</a>
+                <a class="nav-link text-dark px-2 px-md-3" href="#">&#35react</a>
+                <a class="nav-link text-dark px-2 px-md-3" href="#">&#35css</a>
+                <a class="nav-link text-dark px-2 px-md-3" href="#">&#35webdev</a>
               </nav>
             </a>
             <div class="row d-flex justify-content-between">
-              <div class="col-6 col-md-8 pr-0">
-                <nav class="nav ml-3">
+              <div class="col-6 col-md-8 pr-0 pl-0 pl-md-3">
+                <nav class="nav ml-1 ml-md-4">
                   <a class="nav-link d-flex flex-row align-items-center pl-1 pr-0" href="#">
                     <img src="images/heart-icon.svg" alt="" width="30" height="30">
                     <p class="nav-link card-text pl-0"><small class="text-muted d-flex w-100">68<span
@@ -516,7 +516,7 @@
         </div>
 
         <div class="card mb-3">
-          <div class="card-body">
+          <div class="card-body card-body-padding">
             <div class="container">
               <div class="row">
                 <div class="mb-2">
@@ -530,20 +530,20 @@
                 </div>
               </div>
             </div>
-            <a href="#">
+            <a class="text-movile" href="#">
               <h4 class="card-title text-dark font-weight-bolder ml-4 mb-1 title-hx">
                 Best Tools For Web Development
               </h4>
-              <nav class="nav ml-3">
-                <a class="nav-link text-dark" href="#">&#35webdev</a>
-                <a class="nav-link text-dark" href="#">&#35html</a>
-                <a class="nav-link text-dark" href="#">&#35css</a>
-                <a class="nav-link text-dark" href="#">&#35javascript</a>
+              <nav class="nav ml-md-3">
+                <a class="nav-link text-dark pl-0 pr-2 px-md-3" href="#">&#35webdev</a>
+                <a class="nav-link text-dark px-2 px-md-3" href="#">&#35html</a>
+                <a class="nav-link text-dark px-2 px-md-3" href="#">&#35css</a>
+                <a class="nav-link text-dark px-2 px-md-3" href="#">&#35javascript</a>
               </nav>
             </a>
             <div class="row d-flex justify-content-between">
-              <div class="col-6 col-md-8 pr-0">
-                <nav class="nav ml-3">
+              <div class="col-6 col-md-8 pr-0 pl-0 pl-md-3">
+                <nav class="nav ml-1 ml-md-4">
                   <a class="nav-link d-flex flex-row align-items-center pl-1 pr-0" href="#">
                     <img src="images/heart-icon.svg" alt="" width="30" height="30">
                     <p class="nav-link card-text pl-0"><small class="text-muted d-flex w-100">113 <span
@@ -566,7 +566,7 @@
         </div>
 
         <div class="card mb-3">
-          <div class="card-body">
+          <div class="card-body card-body-padding">
             <div class="container">
               <div class="row">
                 <div class="mb-2">
@@ -580,20 +580,20 @@
                 </div>
               </div>
             </div>
-            <a href="#">
+            <a class="text-movile" href="#">
               <h4 class="card-title text-dark font-weight-bolder ml-4 mb-1 title-hx">
                 Create Dynamic Spinners only using CSS
               </h4>
-              <nav class="nav ml-3">
-                <a class="nav-link text-dark" href="#">&#35css</a>
-                <a class="nav-link text-dark" href="#">&#35html</a>
-                <a class="nav-link text-dark" href="#">&#35webdev</a>
-                <a class="nav-link text-dark" href="#">&#35ux</a>
+              <nav class="nav ml-md-3">
+                <a class="nav-link text-dark pl-0 pr-2 px-md-3" href="#">&#35css</a>
+                <a class="nav-link text-dark px-2 px-md-3" href="#">&#35html</a>
+                <a class="nav-link text-dark px-2 px-md-3" href="#">&#35webdev</a>
+                <a class="nav-link text-dark px-2 px-md-3" href="#">&#35ux</a>
               </nav>
             </a>
             <div class="row d-flex justify-content-between">
-              <div class="col-6 col-md-8 pr-0">
-                <nav class="nav ml-3">
+              <div class="col-6 col-md-8 pr-0 pl-0 pl-md-3">
+                <nav class="nav ml-1 ml-md-4">
                   <a class="nav-link d-flex flex-row align-items-center pl-1 pr-0" href="#">
                     <img src="images/heart-icon.svg" alt="" width="30" height="30">
                     <p class="nav-link card-text pl-0"><small class="text-muted d-flex w-100">135<span
@@ -616,7 +616,7 @@
         </div>
 
         <div class="card mb-3">
-          <div class="card-body">
+          <div class="card-body card-body-padding">
             <div class="container">
               <div class="row">
                 <div class="mb-2">
@@ -630,20 +630,20 @@
                 </div>
               </div>
             </div>
-            <a href="post.html">
+            <a class="text-movile" href="post.html">
               <h4 class="card-title text-dark font-weight-bolder ml-4 mb-1 title-hx">
                 5 Awesome React Hooks ⚛️
               </h4>
-              <nav class="nav ml-3">
-                <a class="nav-link text-dark" href="#">&#35react</a>
-                <a class="nav-link text-dark" href="#">&#35reactnative</a>
-                <a class="nav-link text-dark" href="#">&#35javascript</a>
-                <a class="nav-link text-dark" href="#">&#35nextjs</a>
+              <nav class="nav ml-md-3">
+                <a class="nav-link text-dark pl-0 pr-2 px-md-3" href="#">&#35react</a>
+                <a class="nav-link text-dark px-2 px-md-3" href="#">&#35reactnative</a>
+                <a class="nav-link text-dark px-2 px-md-3" href="#">&#35javascript</a>
+                <a class="nav-link text-dark px-2 px-md-3" href="#">&#35nextjs</a>
               </nav>
             </a>
             <div class="row d-flex justify-content-between">
-              <div class="col-6 col-md-8 pr-0">
-                <nav class="nav ml-3">
+              <div class="col-6 col-md-8 pr-0 pl-0 pl-md-3">
+                <nav class="nav ml-1 ml-md-4">
                   <a class="nav-link d-flex flex-row align-items-center pl-1 pr-0" href="#">
                     <img src="images/heart-icon.svg" alt="" width="30" height="30">
                     <p class="nav-link card-text pl-0"><small class="text-muted d-flex w-100">111<span
@@ -666,7 +666,7 @@
         </div>
 
         <div class="card mb-3">
-          <div class="card-body">
+          <div class="card-body card-body-padding">
             <div class="container">
               <div class="row">
                 <div class="mb-2">
@@ -680,20 +680,20 @@
                 </div>
               </div>
             </div>
-            <a href="#">
+            <a class="text-movile" href="#">
               <h4 class="card-title text-dark font-weight-bolder ml-4 mb-1 title-hx">
                 Learning about CSS pseudo-elements by building simple things - Part 1: Button and link hover effects.
               </h4>
-              <nav class="nav ml-3">
-                <a class="nav-link text-dark" href="#">&#35css</a>
-                <a class="nav-link text-dark" href="#">&#35tutorial</a>
-                <a class="nav-link text-dark" href="#">&#35webdev</a>
-                <a class="nav-link text-dark" href="#">&#35beginners</a>
+              <nav class="nav ml-md-3">
+                <a class="nav-link text-dark pl-0 pr-2 px-md-3" href="#">&#35css</a>
+                <a class="nav-link text-dark px-2 px-md-3" href="#">&#35tutorial</a>
+                <a class="nav-link text-dark px-2 px-md-3" href="#">&#35webdev</a>
+                <a class="nav-link text-dark px-2 px-md-3" href="#">&#35beginners</a>
               </nav>
             </a>
             <div class="row d-flex justify-content-between">
-              <div class="col-6 col-md-8 pr-0">
-                <nav class="nav ml-3">
+              <div class="col-6 col-md-8 pr-0 pl-0 pl-md-3">
+                <nav class="nav ml-1 ml-md-4">
                   <a class="nav-link d-flex flex-row align-items-center pl-1 pr-0" href="#">
                     <img src="images/heart-icon.svg" alt="" width="30" height="30">
                     <p class="nav-link card-text pl-0"><small class="text-muted d-flex w-100">138<span
@@ -716,7 +716,7 @@
         </div>
 
         <div class="card mb-3">
-          <div class="card-body">
+          <div class="card-body card-body-padding">
             <div class="container">
               <div class="row">
                 <div class="mb-2">
@@ -730,20 +730,20 @@
                 </div>
               </div>
             </div>
-            <a href="#">
+            <a class="text-movile" href="#">
               <h4 class="card-title text-dark font-weight-bolder ml-4 mb-1 title-hx">
                 Getting started with Tailwind and React: Implementing responsiveness
               </h4>
-              <nav class="nav ml-3">
-                <a class="nav-link text-dark" href="#">&#35tailwindcss</a>
-                <a class="nav-link text-dark" href="#">&#35react</a>
-                <a class="nav-link text-dark" href="#">&#35javascript</a>
-                <a class="nav-link text-dark" href="#">&#35webdev</a>
+              <nav class="nav ml-md-3">
+                <a class="nav-link text-dark pl-0 pr-2 px-md-3" href="#">&#35tailwindcss</a>
+                <a class="nav-link text-dark px-2 px-md-3" href="#">&#35react</a>
+                <a class="nav-link text-dark px-2 px-md-3" href="#">&#35javascript</a>
+                <a class="nav-link text-dark px-2 px-md-3" href="#">&#35webdev</a>
               </nav>
             </a>
             <div class="row d-flex justify-content-between">
-              <div class="col-6 col-md-8 pr-0">
-                <nav class="nav ml-3">
+              <div class="col-6 col-md-8 pr-0 pl-0 pl-md-3">
+                <nav class="nav ml-1 ml-md-4">
                   <a class="nav-link d-flex flex-row align-items-center pl-1 pr-0" href="#">
                     <img src="images/heart-icon.svg" alt="" width="30" height="30">
                     <p class="nav-link card-text pl-0"><small class="text-muted d-flex w-100">157<span
@@ -766,7 +766,7 @@
         </div>
 
         <div class="card mb-3">
-          <div class="card-body">
+          <div class="card-body card-body-padding">
             <div class="container">
               <div class="row">
                 <div class="mb-2">
@@ -780,20 +780,20 @@
                 </div>
               </div>
             </div>
-            <a href="#">
+            <a class="text-movile" href="#">
               <h4 class="card-title text-dark font-weight-bolder ml-4 mb-1 title-hx">
                 Getting started with Tailwind and React: Implementing responsiveness
               </h4>
-              <nav class="nav ml-3">
-                <a class="nav-link text-dark" href="#">&#35programming</a>
-                <a class="nav-link text-dark" href="#">&#35javascript</a>
-                <a class="nav-link text-dark" href="#">&#35html</a>
-                <a class="nav-link text-dark" href="#">&#35css</a>
+              <nav class="nav ml-md-3">
+                <a class="nav-link text-dark pl-0 pr-2 px-md-3" href="#">&#35programming</a>
+                <a class="nav-link text-dark px-2 px-md-3" href="#">&#35javascript</a>
+                <a class="nav-link text-dark px-2 px-md-3" href="#">&#35html</a>
+                <a class="nav-link text-dark px-2 px-md-3" href="#">&#35css</a>
               </nav>
             </a>
             <div class="row d-flex justify-content-between">
-              <div class="col-6 col-md-8 pr-0">
-                <nav class="nav ml-3">
+              <div class="col-6 col-md-8 pr-0 pl-0 pl-md-3">
+                <nav class="nav ml-1 ml-md-4">
                   <a class="nav-link d-flex flex-row align-items-center pl-1 pr-0" href="#">
                     <img src="images/heart-icon.svg" alt="" width="30" height="30">
                     <p class="nav-link card-text pl-0"><small class="text-muted d-flex w-100">152<span
@@ -816,7 +816,7 @@
         </div>
 
         <div class="card mb-3">
-          <div class="card-body">
+          <div class="card-body card-body-padding">
             <div class="container">
               <div class="row">
                 <div class="mb-2">
@@ -830,20 +830,20 @@
                 </div>
               </div>
             </div>
-            <a href="#">
+            <a class="text-movile" href="#">
               <h4 class="card-title text-dark font-weight-bolder ml-4 mb-1 title-hx">
                 100 underline/overlay animations | the ultimate CSS collection 🥇
               </h4>
-              <nav class="nav ml-3">
-                <a class="nav-link text-dark" href="#">&#35css</a>
-                <a class="nav-link text-dark" href="#">&#35jbeginners</a>
-                <a class="nav-link text-dark" href="#">&#35webdev</a>
-                <a class="nav-link text-dark" href="#">&#35codepen</a>
+              <nav class="nav ml-md-3">
+                <a class="nav-link text-dark pl-0 pr-2 px-md-3" href="#">&#35css</a>
+                <a class="nav-link text-dark px-2 px-md-3" href="#">&#35jbeginners</a>
+                <a class="nav-link text-dark px-2 px-md-3" href="#">&#35webdev</a>
+                <a class="nav-link text-dark px-2 px-md-3" href="#">&#35codepen</a>
               </nav>
             </a>
             <div class="row d-flex justify-content-between">
-              <div class="col-6 col-md-8 pr-0">
-                <nav class="nav ml-3">
+              <div class="col-6 col-md-8 pr-0 pl-0 pl-md-3">
+                <nav class="nav ml-1 ml-md-4">
                   <a class="nav-link d-flex flex-row align-items-center pl-1 pr-0" href="#">
                     <img src="images/heart-icon.svg" alt="" width="30" height="30">
                     <p class="nav-link card-text pl-0"><small class="text-muted d-flex w-100">182<span
@@ -866,7 +866,7 @@
         </div>
 
         <div class="card mb-3">
-          <div class="card-body">
+          <div class="card-body card-body-padding">
             <div class="container">
               <div class="row">
                 <div class="mb-2">
@@ -880,20 +880,20 @@
                 </div>
               </div>
             </div>
-            <a href="#">
+            <a class="text-movile" href="#">
               <h4 class="card-title text-dark font-weight-bolder ml-4 mb-1 title-hx">
                 CSS 101 - Position static vs relative vs absolute
               </h4>
-              <nav class="nav ml-3">
-                <a class="nav-link text-dark" href="#">&#35css</a>
-                <a class="nav-link text-dark" href="#">&#35jbeginners</a>
-                <a class="nav-link text-dark" href="#">&#35tutorial</a>
-                <a class="nav-link text-dark" href="#">&#35codepen</a>
+              <nav class="nav ml-md-3">
+                <a class="nav-link text-dark pl-0 pr-2 px-md-3" href="#">&#35css</a>
+                <a class="nav-link text-dark px-2 px-md-3" href="#">&#35jbeginners</a>
+                <a class="nav-link text-dark px-2 px-md-3" href="#">&#35tutorial</a>
+                <a class="nav-link text-dark px-2 px-md-3" href="#">&#35codepen</a>
               </nav>
             </a>
             <div class="row d-flex justify-content-between">
-              <div class="col-6 col-md-8 pr-0">
-                <nav class="nav ml-3">
+              <div class="col-6 col-md-8 pr-0 pl-0 pl-md-3">
+                <nav class="nav ml-1 ml-md-4">
                   <a class="nav-link d-flex flex-row align-items-center pl-1 pr-0" href="#">
                     <img src="images/heart-icon.svg" alt="" width="30" height="30">
                     <p class="nav-link card-text pl-0"><small class="text-muted d-flex w-100">163<span
@@ -916,7 +916,7 @@
         </div>
 
         <div class="card mb-3">
-          <div class="card-body">
+          <div class="card-body card-body-padding">
             <div class="container">
               <div class="row">
                 <div class="mb-2">
@@ -930,20 +930,20 @@
                 </div>
               </div>
             </div>
-            <a href="#">
+            <a class="text-movile" href="#">
               <h4 class="card-title text-dark font-weight-bolder ml-4 mb-1 title-hx">
                 How to Make Background Image Fit to Screen in CSS | Create a Responsive CSS Background Image
               </h4>
-              <nav class="nav ml-3">
-                <a class="nav-link text-dark" href="#">&#35html</a>
-                <a class="nav-link text-dark" href="#">&#35css</a>
-                <a class="nav-link text-dark" href="#">&#35design</a>
-                <a class="nav-link text-dark" href="#">&#35webdev</a>
+              <nav class="nav ml-md-3">
+                <a class="nav-link text-dark pl-0 pr-2 px-md-3" href="#">&#35html</a>
+                <a class="nav-link text-dark px-2 px-md-3" href="#">&#35css</a>
+                <a class="nav-link text-dark px-2 px-md-3" href="#">&#35design</a>
+                <a class="nav-link text-dark px-2 px-md-3" href="#">&#35webdev</a>
               </nav>
             </a>
             <div class="row d-flex justify-content-between">
-              <div class="col-6 col-md-8 pr-0">
-                <nav class="nav ml-3">
+              <div class="col-6 col-md-8 pr-0 pl-0 pl-md-3">
+                <nav class="nav ml-1 ml-md-4">
                   <a class="nav-link d-flex flex-row align-items-center pl-1 pr-0" href="#">
                     <img src="images/heart-icon.svg" alt="" width="30" height="30">
                     <p class="nav-link card-text pl-0"><small class="text-muted d-flex w-100">193<span
@@ -966,7 +966,7 @@
         </div>
 
         <div class="card mb-3">
-          <div class="card-body">
+          <div class="card-body card-body-padding">
             <div class="container">
               <div class="row">
                 <div class="mb-2">
@@ -980,20 +980,20 @@
                 </div>
               </div>
             </div>
-            <a href="#">
+            <a class="text-movile" href="#">
               <h4 class="card-title text-dark font-weight-bolder ml-4 mb-1 title-hx">
                 How to create gradient text with CSS
               </h4>
-              <nav class="nav ml-3">
-                <a class="nav-link text-dark" href="#">&#35html</a>
-                <a class="nav-link text-dark" href="#">&#35css</a>
-                <a class="nav-link text-dark" href="#">&#35design</a>
-                <a class="nav-link text-dark" href="#">&#35webdev</a>
+              <nav class="nav ml-md-3">
+                <a class="nav-link text-dark pl-0 pr-2 px-md-3" href="#">&#35html</a>
+                <a class="nav-link text-dark px-2 px-md-3" href="#">&#35css</a>
+                <a class="nav-link text-dark px-2 px-md-3" href="#">&#35design</a>
+                <a class="nav-link text-dark px-2 px-md-3" href="#">&#35webdev</a>
               </nav>
             </a>
             <div class="row d-flex justify-content-between">
-              <div class="col-6 col-md-8 pr-0">
-                <nav class="nav ml-3">
+              <div class="col-6 col-md-8 pr-0 pl-0 pl-md-3">
+                <nav class="nav ml-1 ml-md-4">
                   <a class="nav-link d-flex flex-row align-items-center pl-1 pr-0" href="#">
                     <img src="images/heart-icon.svg" alt="" width="30" height="30">
                     <p class="nav-link card-text pl-0"><small class="text-muted d-flex w-100">199<span

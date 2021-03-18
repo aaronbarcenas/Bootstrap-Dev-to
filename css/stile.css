@@ -110,5 +110,18 @@ a:hover {
   .margin-right-icon {
     margin-right: 12px;
   }
+  .text-movile {
+    margin-left: 0;
+  }
+  .text-movile h2, .text-movile h4 {
+    font-size: 20px;
+    margin-left: 0 !important;
+  }
+  .text-movile nav {
+    margin: 0 0 0 0 !important;
+  }
+  .card-body-padding {
+    padding: 12px;
+  }
 }
 /*# sourceMappingURL=stile.css.map */
