@@ -103,3 +103,14 @@ a:hover {
 .link-active {
   border-bottom: 2px solid $primary-blue;
 }
+
+@media only screen and ( max-width: 766px ) {
+  .padding-zero {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .margin-right-icon {
+    margin-right: 12px;
+  }
+}

@@ -14,31 +14,31 @@
 
 <body>
 
-  <nav
-    class="container navbar navbar-expand-lg navbar-light bg-light border border-top-0 border-right-0 border-left-0 border-gradient-secondary justify-content-between px-0">
+  <nav class="container-fluit bg-light border border-top-0 border-right-0 border-left-0 border-gradient-secondary">
+    <div class="container navbar navbar-expand-md navbar-light bg-light  justify-content-between px-0">
     <div class="d-flex align-items-center col-6 pl-0">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      <button class="navbar-toggler border-top-0 border-right-0 border-left-0 border-bottom-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <a class="navbar-brand" href="#"><img src="images/devto.svg" width="37" height="40" alt=""></a>
-      <form class="form-inline my-2 my-lg-0 d-none d-lg-block">
+      <form class="form-inline my-2 my-lg-0 d-none d-md-block">
         <input class="form-control mr-sm-2" type="search" placeholder="Search..." aria-label="Search">
       </form>
     </div>
 
     <div class="right-wrap d-flex align-items-center col-6 justify-content-end pr-0">
-      <button class="btn btn-primary d-none d-lg-block color-blue" type="button">Write a post</button>
-      <img class="d-lg-none px-2 navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSearchContent"
+      <button class="btn btn-primary d-none d-md-block color-blue" type="button">Write a post</button>
+      <img class="d-md-none pr-3 navbar-toggler border-top-0 border-right-0 border-left-0 border-bottom-0" type="button" data-toggle="collapse" data-target="#navbarSearchContent"
         aria-controls="navbarSearchContent" aria-expanded="false" aria-label="Toggle navigation"
         src="images/lupa-icon.svg" alt="lupa-icon">
-      <img class="px-2" type="button" data-toggle="collapse" data-target="#navbarWriteContent"
+      <img class="pl-md-4 pr-2" type="button" data-toggle="collapse" data-target="#navbarWriteContent"
         aria-controls="navbarWriteContent" aria-expanded="false" aria-label="Toggle navigation"
         src="images/message-icon.svg" alt="write-icon">
       <img class="pl-2 pr-3" type="button" data-toggle="collapse" data-target="#navbarBellContent"
         aria-controls="navbarBellContent" aria-expanded="false" aria-label="Toggle navigation"
         src="images/bell-icon.svg" alt="bell-icon">
-      <img class="rounded-circle"
+      <img class="rounded-circle margin-right-icon"
         src="https://res.cloudinary.com/practicaldev/image/fetch/s--jl25ieQ4--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/570253/d305dc25-89e7-4959-bba9-f85ff315a1c7.jpeg"
         width="30" height="30" alt="">
     </div>
@@ -174,11 +174,11 @@
         </li>
       </ul>
     </div>
-
+  </div>
   </nav>
 
   <!-- ¿ Como ocultar esta nav cuando uno de los icons sean activados ?-->
-  <nav class="navbar navbar-light d-lg-none alert-secondary">
+  <nav class="navbar navbar-light d-md-none alert-secondary">
     <span class="navbar-brand mb-0 h1">Posts</span>
     <div class="btn-group" role="group">
       <button id="btnGroupDrop1" type="button" class="btn btn-outline-secondary dropdown-toggle" data-toggle="dropdown"
@@ -196,11 +196,11 @@
     </div>
   </nav>
 
-  <main class="container-md-fluid container-lg">
+  <main class="container-fluid container-md">
     <div class="row">
 
 
-      <nav class="col-md-3 col-xl-2 d-none d-md-block px-0">
+      <nav class="col-md-3 col-xl-2 d-none d-md-block pl-3 pr-0">
 
         <div>
           <ul class="navbar-nav mr-auto text-dark">
@@ -233,8 +233,9 @@
             </li>
           </ul>
         </div>
+
         <div>
-          <div class="d-flex justify-content-between mt-4">
+          <div class="d-flex justify-content-between mt-4 pl-3">
             <h5 class="font-weight-bolder">My Tags</h5>
             <img class="icon-invert" src="images/cog-icon.svg" alt="">
           </div>
@@ -278,14 +279,13 @@
 
       </nav>
 
-      <container class="col-12 col-md-9 col-xl-7">
+      <container class="col-12 col-md-9 col-xl-7 padding-zero">
 
-        <nav class="navbar navbar-light d-none d-lg-block d-flex justify-content-between px-0">
-          
+        <nav class="navbar navbar-light d-none d-lg-block d-md-flex justify-content-between px-0">
           <div>
-            <ul class="nav justify-content-between w-100 d-flex align-items-center">
-              <span class="navbar-brand mb-0 h1 d-flex justify-content-start">Posts</span>
-              <div class="d-flex flex-row">
+            <ul class="nav d-flex justify-content-between w-100 align-items-center">
+              <h4 class="navbar-brand mb-0 d-flex justify-content-start font-weight-bolder">Posts</h4>
+              <div class="d-flex flex-row justify-content-end">
                 <li class="nav-item">
                   <a class="nav-link active link-sw link-active" href="#">Feed</a>
                 </li>
@@ -305,7 +305,6 @@
                   <a class="nav-link pr-1 link-sw" href="#">Latest</a>
                 </li>
               </div>
-              
             </ul>
           </div>
         </nav>
@@ -341,7 +340,7 @@
               </nav>
             </a>
             <div class="row d-flex justify-content-between">
-              <div class="col-7 col-md-8">
+              <div class="col-6 col-md-8 pr-0">
                 <nav class="nav ml-3">
                   <a class="nav-link d-flex flex-row align-items-center pl-1 pr-0" href="#">
                     <img src="images/heart-icon.svg" alt="" width="30" height="30">
@@ -355,7 +354,7 @@
                   </a>
                 </nav>
               </div>
-              <div class="col-5 col-md-4 d-flex justify-content-end align-items-center">
+              <div class="col-6 col-md-4 d-flex justify-content-end align-items-center">
                 <p class="nav-link card-text mb-0 px-1"><small class="text-muted px-0">3 min read</small></p>
                 <a href="#" class="btn btn-secondary btn-sm disabled" tabindex="-1" role="button"
                   aria-disabled="true">Save</a>
@@ -391,7 +390,7 @@
               </nav>
             </a>
             <div class="row d-flex justify-content-between">
-              <div class="col-7 col-md-8">
+              <div class="col-6 col-md-8 pr-0">
                 <nav class="nav ml-3">
                   <a class="nav-link d-flex flex-row align-items-center pl-1 pr-0" href="#">
                     <img src="images/heart-icon.svg" alt="" width="30" height="30">
@@ -405,7 +404,7 @@
                   </a>
                 </nav>
               </div>
-              <div class="col-5 col-md-4 d-flex justify-content-end align-items-center">
+              <div class="col-6 col-md-4 d-flex justify-content-end align-items-center">
                 <p class="nav-link card-text mb-0 px-1"><small class="text-muted px-0">2 min read</small></p>
                 <a href="#" class="btn btn-secondary btn-sm disabled" tabindex="-1" role="button"
                   aria-disabled="true">Save</a>
@@ -443,7 +442,7 @@
               </nav>
             </a>
             <div class="row d-flex justify-content-between">
-              <div class="col-7 col-md-8">
+              <div class="col-6 col-md-8 pr-0">
                 <nav class="nav ml-3">
                   <a class="nav-link d-flex flex-row align-items-center pl-1 pr-0" href="#">
                     <img src="images/heart-icon.svg" alt="" width="30" height="30">
@@ -457,7 +456,7 @@
                   </a>
                 </nav>
               </div>
-              <div class="col-5 col-md-4 d-flex justify-content-end align-items-center">
+              <div class="col-6 col-md-4 d-flex justify-content-end align-items-center">
                 <p class="nav-link card-text mb-0 px-1"><small class="text-muted px-0">1 min read</small></p>
                 <a href="#" class="btn btn-secondary btn-sm disabled" tabindex="-1" role="button"
                   aria-disabled="true">Save</a>
@@ -493,7 +492,7 @@
               </nav>
             </a>
             <div class="row d-flex justify-content-between">
-              <div class="col-7 col-md-8">
+              <div class="col-6 col-md-8 pr-0">
                 <nav class="nav ml-3">
                   <a class="nav-link d-flex flex-row align-items-center pl-1 pr-0" href="#">
                     <img src="images/heart-icon.svg" alt="" width="30" height="30">
@@ -507,7 +506,7 @@
                   </a>
                 </nav>
               </div>
-              <div class="col-5 col-md-4 d-flex justify-content-end align-items-center">
+              <div class="col-6 col-md-4 d-flex justify-content-end align-items-center">
                 <p class="nav-link card-text mb-0 px-1"><small class="text-muted px-0">2 min read</small></p>
                 <a href="#" class="btn btn-secondary btn-sm disabled" tabindex="-1" role="button"
                   aria-disabled="true">Save</a>
@@ -543,7 +542,7 @@
               </nav>
             </a>
             <div class="row d-flex justify-content-between">
-              <div class="col-7 col-md-8">
+              <div class="col-6 col-md-8 pr-0">
                 <nav class="nav ml-3">
                   <a class="nav-link d-flex flex-row align-items-center pl-1 pr-0" href="#">
                     <img src="images/heart-icon.svg" alt="" width="30" height="30">
@@ -557,7 +556,7 @@
                   </a>
                 </nav>
               </div>
-              <div class="col-5 col-md-4 d-flex justify-content-end align-items-center">
+              <div class="col-6 col-md-4 d-flex justify-content-end align-items-center">
                 <p class="nav-link card-text mb-0 px-1"><small class="text-muted px-0">4 min read</small></p>
                 <a href="#" class="btn btn-secondary btn-sm disabled" tabindex="-1" role="button"
                   aria-disabled="true">Save</a>
@@ -593,7 +592,7 @@
               </nav>
             </a>
             <div class="row d-flex justify-content-between">
-              <div class="col-7 col-md-8">
+              <div class="col-6 col-md-8 pr-0">
                 <nav class="nav ml-3">
                   <a class="nav-link d-flex flex-row align-items-center pl-1 pr-0" href="#">
                     <img src="images/heart-icon.svg" alt="" width="30" height="30">
@@ -607,7 +606,7 @@
                   </a>
                 </nav>
               </div>
-              <div class="col-5 col-md-4 d-flex justify-content-end align-items-center">
+              <div class="col-6 col-md-4 d-flex justify-content-end align-items-center">
                 <p class="nav-link card-text mb-0 px-1"><small class="text-muted px-0">2 min read</small></p>
                 <a href="#" class="btn btn-secondary btn-sm disabled" tabindex="-1" role="button"
                   aria-disabled="true">Save</a>
@@ -643,7 +642,7 @@
               </nav>
             </a>
             <div class="row d-flex justify-content-between">
-              <div class="col-7 col-md-8">
+              <div class="col-6 col-md-8 pr-0">
                 <nav class="nav ml-3">
                   <a class="nav-link d-flex flex-row align-items-center pl-1 pr-0" href="#">
                     <img src="images/heart-icon.svg" alt="" width="30" height="30">
@@ -657,7 +656,7 @@
                   </a>
                 </nav>
               </div>
-              <div class="col-5 col-md-4 d-flex justify-content-end align-items-center">
+              <div class="col-6 col-md-4 d-flex justify-content-end align-items-center">
                 <p class="nav-link card-text mb-0 px-1"><small class="text-muted px-0">2 min read</small></p>
                 <a href="#" class="btn btn-secondary btn-sm disabled" tabindex="-1" role="button"
                   aria-disabled="true">Save</a>
@@ -693,7 +692,7 @@
               </nav>
             </a>
             <div class="row d-flex justify-content-between">
-              <div class="col-7 col-md-8">
+              <div class="col-6 col-md-8 pr-0">
                 <nav class="nav ml-3">
                   <a class="nav-link d-flex flex-row align-items-center pl-1 pr-0" href="#">
                     <img src="images/heart-icon.svg" alt="" width="30" height="30">
@@ -707,7 +706,7 @@
                   </a>
                 </nav>
               </div>
-              <div class="col-5 col-md-4 d-flex justify-content-end align-items-center">
+              <div class="col-6 col-md-4 d-flex justify-content-end align-items-center">
                 <p class="nav-link card-text mb-0 px-1"><small class="text-muted px-0">4 min read</small></p>
                 <a href="#" class="btn btn-secondary btn-sm disabled" tabindex="-1" role="button"
                   aria-disabled="true">Save</a>
@@ -743,7 +742,7 @@
               </nav>
             </a>
             <div class="row d-flex justify-content-between">
-              <div class="col-7 col-md-8">
+              <div class="col-6 col-md-8 pr-0">
                 <nav class="nav ml-3">
                   <a class="nav-link d-flex flex-row align-items-center pl-1 pr-0" href="#">
                     <img src="images/heart-icon.svg" alt="" width="30" height="30">
@@ -757,7 +756,7 @@
                   </a>
                 </nav>
               </div>
-              <div class="col-5 col-md-4 d-flex justify-content-end align-items-center">
+              <div class="col-6 col-md-4 d-flex justify-content-end align-items-center">
                 <p class="nav-link card-text mb-0 px-1"><small class="text-muted px-0">3 min read</small></p>
                 <a href="#" class="btn btn-secondary btn-sm disabled" tabindex="-1" role="button"
                   aria-disabled="true">Save</a>
@@ -793,7 +792,7 @@
               </nav>
             </a>
             <div class="row d-flex justify-content-between">
-              <div class="col-7 col-md-8">
+              <div class="col-6 col-md-8 pr-0">
                 <nav class="nav ml-3">
                   <a class="nav-link d-flex flex-row align-items-center pl-1 pr-0" href="#">
                     <img src="images/heart-icon.svg" alt="" width="30" height="30">
@@ -807,7 +806,7 @@
                   </a>
                 </nav>
               </div>
-              <div class="col-5 col-md-4 d-flex justify-content-end align-items-center">
+              <div class="col-6 col-md-4 d-flex justify-content-end align-items-center">
                 <p class="nav-link card-text mb-0 px-1"><small class="text-muted px-0">5 min read</small></p>
                 <a href="#" class="btn btn-secondary btn-sm disabled" tabindex="-1" role="button"
                   aria-disabled="true">Save</a>
@@ -843,7 +842,7 @@
               </nav>
             </a>
             <div class="row d-flex justify-content-between">
-              <div class="col-7 col-md-8">
+              <div class="col-6 col-md-8 pr-0">
                 <nav class="nav ml-3">
                   <a class="nav-link d-flex flex-row align-items-center pl-1 pr-0" href="#">
                     <img src="images/heart-icon.svg" alt="" width="30" height="30">
@@ -857,7 +856,7 @@
                   </a>
                 </nav>
               </div>
-              <div class="col-5 col-md-4 d-flex justify-content-end align-items-center">
+              <div class="col-6 col-md-4 d-flex justify-content-end align-items-center">
                 <p class="nav-link card-text mb-0 px-1"><small class="text-muted px-0">4 min read</small></p>
                 <a href="#" class="btn btn-secondary btn-sm disabled" tabindex="-1" role="button"
                   aria-disabled="true">Save</a>
@@ -893,7 +892,7 @@
               </nav>
             </a>
             <div class="row d-flex justify-content-between">
-              <div class="col-7 col-md-8">
+              <div class="col-6 col-md-8 pr-0">
                 <nav class="nav ml-3">
                   <a class="nav-link d-flex flex-row align-items-center pl-1 pr-0" href="#">
                     <img src="images/heart-icon.svg" alt="" width="30" height="30">
@@ -907,7 +906,7 @@
                   </a>
                 </nav>
               </div>
-              <div class="col-5 col-md-4 d-flex justify-content-end align-items-center">
+              <div class="col-6 col-md-4 d-flex justify-content-end align-items-center">
                 <p class="nav-link card-text mb-0 px-1"><small class="text-muted px-0">4 min read</small></p>
                 <a href="#" class="btn btn-secondary btn-sm disabled" tabindex="-1" role="button"
                   aria-disabled="true">Save</a>
@@ -943,7 +942,7 @@
               </nav>
             </a>
             <div class="row d-flex justify-content-between">
-              <div class="col-7 col-md-8">
+              <div class="col-6 col-md-8 pr-0">
                 <nav class="nav ml-3">
                   <a class="nav-link d-flex flex-row align-items-center pl-1 pr-0" href="#">
                     <img src="images/heart-icon.svg" alt="" width="30" height="30">
@@ -957,7 +956,7 @@
                   </a>
                 </nav>
               </div>
-              <div class="col-5 col-md-4 d-flex justify-content-end align-items-center">
+              <div class="col-6 col-md-4 d-flex justify-content-end align-items-center">
                 <p class="nav-link card-text mb-0 px-1"><small class="text-muted px-0">2 min read</small></p>
                 <a href="#" class="btn btn-secondary btn-sm disabled" tabindex="-1" role="button"
                   aria-disabled="true">Save</a>
@@ -993,7 +992,7 @@
               </nav>
             </a>
             <div class="row d-flex justify-content-between">
-              <div class="col-7 col-md-8">
+              <div class="col-6 col-md-8 pr-0">
                 <nav class="nav ml-3">
                   <a class="nav-link d-flex flex-row align-items-center pl-1 pr-0" href="#">
                     <img src="images/heart-icon.svg" alt="" width="30" height="30">
@@ -1007,7 +1006,7 @@
                   </a>
                 </nav>
               </div>
-              <div class="col-5 col-md-4 d-flex justify-content-end align-items-center">
+              <div class="col-6 col-md-4 d-flex justify-content-end align-items-center">
                 <p class="nav-link card-text mb-0 px-1"><small class="text-muted px-0">6 min read</small></p>
                 <a href="#" class="btn btn-secondary btn-sm disabled" tabindex="-1" role="button"
                   aria-disabled="true">Save</a>
@@ -1287,7 +1286,7 @@
       </div>
     </div>
     <div class="icon-move d-flex justify-content-end ml-5">
-      <img class="d-none d-md-block" src="https://res.cloudinary.com/practicaldev/image/fetch/s--4RkRuwpj--/c_limit,f_auto,fl_progressive,q_auto,w_100/https://dev-to-uploads.s3.amazonaws.com/i/wmv3mtusjwb3r13d5h2f.png" alt="" width="60">
+      <img class="d-none d-lg-block" src="https://res.cloudinary.com/practicaldev/image/fetch/s--4RkRuwpj--/c_limit,f_auto,fl_progressive,q_auto,w_100/https://dev-to-uploads.s3.amazonaws.com/i/wmv3mtusjwb3r13d5h2f.png" alt="" width="60">
     </div>
 
   </footer>
