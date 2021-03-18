@@ -52,6 +52,11 @@ body {
 .title-hx:hover {
   color: #3b49df !important;
   text-decoration: none !important;
+  list-style: none !important;
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 .btn-hover:hover {
@@ -71,9 +76,8 @@ body {
 }
 
 .icon-move {
-  background-repeat: no-repeat;
-  background-position-x: 100%;
   position: absolute;
+  right: 40px;
 }
 
 .icon-move:hover {
@@ -83,5 +87,18 @@ body {
 
 .border-gray {
   border-bottom: 1px solid #999;
+}
+
+.link-sw {
+  color: #333;
+}
+
+.link-sw:hover {
+  background-color: #E2E4E6;
+  border-radius: 5px;
+}
+
+.link-active {
+  border-bottom: 2px solid #3b49df;
 }
 /*# sourceMappingURL=stile.css.map */
