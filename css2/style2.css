@@ -4,12 +4,32 @@
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+.gray {
+  background-color: #eef0f1;
+}
+
 .fs-18 {
   font-size: 18px;
 }
 
+body {
+  background-color: #eef0f1;
+}
+
+.nav-link {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #eef0f1;
+  color: #363d44;
+  text-align: center;
+}
+
 .main-top {
   padding: 0px 0px 0px 0px;
+  border: 1px solid #d7d9d9;
+  border-radius: .25rem;
 }
 
 .main-top .no-border {
@@ -26,8 +46,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .main-top .card-body h1 {
@@ -162,6 +184,7 @@
 
 .bottom {
   padding: 12px;
+  background-color: #ffffff;
 }
 
 .bottom .lessons {
@@ -285,8 +308,19 @@
   .row {
     padding: 16px;
   }
+  .nav-link {
+    padding: 1.8rem;
+    position: -webkit-sticky;
+    position: sticky;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #eef0f1;
+    color: #363d44;
+    text-align: center;
+  }
   .main-top {
-    padding: 0px 16px 16px 16px;
+    padding: 0px 0px 0px 0px;
   }
   .main-top .no-border {
     border: 0px;
@@ -466,10 +500,6 @@
     font-size: 27px;
     font-weight: bold;
   }
-}
-
-.aside-div {
-  width: 313.594px;
 }
 
 .border-card {
